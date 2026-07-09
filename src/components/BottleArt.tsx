@@ -1,6 +1,13 @@
 import type { Product } from "../types";
 import { accordColor } from "../lib/accords";
 
+/** Antepone la base del deploy a una ruta de /public.
+ *  Con base "./" resuelve bien en el subpath de GitHub Pages y en el dominio
+ *  propio servido desde la raíz. */
+function asset(path: string): string {
+  return import.meta.env.BASE_URL + path.replace(/^\//, "");
+}
+
 /**
  * Placeholder elegante por producto: gradiente tintado con el color del
  * acorde principal + inicial de la marca en Bodoni. Cuando el producto
@@ -10,7 +17,7 @@ export function BottleArt({ product, className = "" }: { product: Product; class
   if (product.image) {
     return (
       <img
-        src={product.image}
+        src={asset(product.image)}
         alt={`Frasco de ${product.brand} ${product.name}`}
         loading="lazy"
         decoding="async"
