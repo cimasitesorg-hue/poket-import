@@ -1,6 +1,8 @@
 # Poket Import
 
-Catálogo showcase mobile-first de perfumería árabe importada. Sin backend: el sitio es 100% estático, el carrito vive en `localStorage` y la compra se cierra por WhatsApp con un mensaje prearmado.
+Catálogo showcase mobile-first de perfumería importada. Sin backend: el sitio es 100% estático, el carrito vive en `localStorage` y la compra se cierra por WhatsApp con un mensaje prearmado.
+
+**En vivo:** https://cimasitesorg-hue.github.io/poket-import/
 
 **Stack:** Vite + React + TypeScript + Tailwind CSS v4 + Motion. Fuentes autohosteadas (Bodoni Moda + Jost vía Fontsource).
 
@@ -73,15 +75,15 @@ Formato internacional, sin `+`, espacios ni guiones (así lo espera `wa.me`).
 
 ## Cómo deployar
 
-El build es estático: cualquier hosting sirve.
+Ya está en **GitHub Pages** con deploy automático: cada push a `main` dispara el workflow `.github/workflows/deploy.yml`, que construye y publica. No hay que hacer nada manual; en 1-2 min queda online en https://cimasitesorg-hue.github.io/poket-import/
 
-**Vercel:** importá el repo en vercel.com. Framework preset: Vite. Build command `npm run build`, output `dist`. Listo.
+`base: "./"` en `vite.config.ts` hace que el mismo build funcione tanto en esa URL de proyecto (subpath) como en un dominio propio servido desde la raíz.
 
-**Netlify:** igual: build command `npm run build`, publish directory `dist`.
+**Conectar el dominio propio** (cuando lo compres): Settings → Pages → Custom domain, escribí el dominio y guardá. En tu proveedor de DNS: un registro `CNAME` de `www` → `cimasitesorg-hue.github.io`, y para el dominio raíz los 4 registros `A` de GitHub Pages (`185.199.108.153`, `.109.153`, `.110.153`, `.111.153`). GitHub crea el certificado HTTPS solo. No hace falta reconstruir: las rutas relativas ya funcionan desde la raíz.
 
-**A mano:** `npm run build` y subí el contenido de `dist/` a cualquier hosting estático.
+**Verificar el build de Pages en local** (opcional): `npm run build && npm run serve:pages`, abrí http://localhost:4178/poket-import/ — reproduce el subpath de GitHub Pages.
 
-No hay variables de entorno ni backend. El JSON de productos viaja dentro del build (cambiaste el stock → rebuild + deploy).
+Alternativa (Vercel/Netlify): importá el repo, preset Vite, build `npm run build`, output `dist`. No hay variables de entorno ni backend; el JSON de productos viaja dentro del build (cambiaste el stock → push y redeploya solo).
 
 ## Estructura
 
