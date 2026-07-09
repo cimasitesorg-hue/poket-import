@@ -1,0 +1,210 @@
+@import "@fontsource-variable/bodoni-moda";
+@import "@fontsource-variable/jost";
+@import "tailwindcss";
+
+@theme {
+  /* Paleta "attar de noche" en OKLCH: todos los neutrales tintados hacia el
+     hue del cobre (55°) con croma bajo (0.006-0.014), y la escala de acento
+     definida por pasos de luminosidad perceptual, no a ojo. */
+  --color-bg: oklch(0.135 0.008 55);
+  --color-surface: oklch(0.205 0.01 55);
+  --color-surface-2: oklch(0.255 0.012 55);
+  --color-line: oklch(0.32 0.014 55);
+  --color-ink: oklch(0.975 0.004 55);
+  --color-ink-muted: oklch(0.73 0.014 55);
+  --color-ink-faint: oklch(0.56 0.014 55);
+  --color-copper: oklch(0.75 0.125 55);
+  --color-copper-deep: oklch(0.66 0.13 55);
+  --color-danger: oklch(0.72 0.15 25);
+
+  --font-display: "Bodoni Moda Variable", "Bodoni Moda", Didot, serif;
+  --font-body: "Jost Variable", Jost, system-ui, sans-serif;
+
+  /* Curvas custom, nada de ease-in-out default */
+  --ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-drawer: cubic-bezier(0.32, 0.72, 0, 1);
+}
+
+html {
+  background: var(--color-bg);
+}
+
+/* Scroll suave solo si el usuario no pidió menos movimiento */
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+/* Sin delay de 300ms en el tap y sin double-tap-zoom accidental */
+a,
+button {
+  touch-action: manipulation;
+}
+
+body {
+  font-family: var(--font-body);
+  color: var(--color-ink);
+  background: var(--color-bg);
+  -webkit-font-smoothing: antialiased;
+  min-height: 100dvh;
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--font-display);
+  text-wrap: balance;
+}
+
+/* Precios y cantidades siempre tabulares: no saltan al cambiar */
+.tnum {
+  font-variant-numeric: tabular-nums;
+}
+
+::selection {
+  background: color-mix(in oklch, var(--color-copper) 40%, transparent);
+}
+
+:focus-visible {
+  outline: 2px solid var(--color-copper);
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
+/* Scroll horizontal de filtros sin barra visible */
+.no-scrollbar {
+  scrollbar-width: none;
+}
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+/* ===== Entrada del hero: stagger en CSS puro, no bloquea LCP ===== */
+@media (prefers-reduced-motion: no-preference) {
+  .hero-in {
+    opacity: 0;
+    transform: translateY(34px);
+    animation: hero-in 1000ms var(--ease-out-expo) forwards;
+    animation-delay: calc(var(--i, 0) * 150ms);
+  }
+  @keyframes hero-in {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+}
+
+/* ===== Logo: entrada por partes (P sube, I baja, arco aparece al final) ===== */
+@media (prefers-reduced-motion: no-preference) {
+  .logo-p,
+  .logo-i,
+  .logo-arc {
+    opacity: 0;
+    animation: logo-part 1100ms var(--ease-out-expo) forwards;
+  }
+  .logo-p {
+    transform: translateY(24px);
+  }
+  .logo-i {
+    transform: translateY(-24px);
+    animation-delay: 220ms;
+  }
+  .logo-arc {
+    transform: translateY(10px);
+    animation-delay: 480ms;
+    animation-duration: 950ms;
+  }
+  @keyframes logo-part {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+}
+
+/* ===== Scroll reveal del catálogo (IntersectionObserver agrega .is-visible) =====
+   Solo se oculta si hay JS activo (html.js) y sin reduced-motion:
+   sin JS o con reduced-motion el contenido queda visible siempre. */
+@media (prefers-reduced-motion: no-preference) {
+  .js .reveal {
+    opacity: 0;
+    transform: translateY(44px);
+    transition:
+      opacity 900ms var(--ease-out-expo),
+      transform 900ms var(--ease-out-expo);
+    transition-delay: var(--stagger, 0ms);
+  }
+  .js .reveal.is-visible {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+/* ===== Feedback táctil: todo lo presionable responde ===== */
+@media (prefers-reduced-motion: no-preference) {
+  .pressable {
+    transition: transform 160ms var(--ease-out-expo);
+  }
+  .pressable:active {
+    transform: scale(0.97);
+  }
+}
+
+/* ===== Contenido de la ficha: entra en jerarquía (tras el shared element) ===== */
+@media (prefers-reduced-motion: no-preference) {
+  .sheet-in {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: sheet-in 750ms var(--ease-out-expo) forwards;
+    animation-delay: calc(var(--i, 0) * 110ms + 180ms);
+  }
+  @keyframes sheet-in {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+}
+
+/* ===== Barras de acordes: se "pintan" con clip-path al aparecer ===== */
+@media (prefers-reduced-motion: no-preference) {
+  .accord-fill {
+    clip-path: inset(0 100% 0 0);
+    animation: paint 1200ms var(--ease-out-expo) forwards;
+    animation-delay: calc(var(--i, 0) * 100ms + 200ms);
+  }
+  @keyframes paint {
+    to {
+      clip-path: inset(0 0 0 0);
+    }
+  }
+}
+
+/* ===== Skeleton shimmer (solo transform) ===== */
+.skeleton {
+  position: relative;
+  overflow: hidden;
+  background: var(--color-surface);
+}
+@media (prefers-reduced-motion: no-preference) {
+  .skeleton::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    transform: translateX(-100%);
+    background: linear-gradient(
+      90deg,
+      transparent,
+      color-mix(in oklch, var(--color-ink) 5%, transparent),
+      transparent
+    );
+    animation: shimmer 1.6s var(--ease-out-expo) infinite;
+  }
+  @keyframes shimmer {
+    to {
+      transform: translateX(100%);
+    }
+  }
+}

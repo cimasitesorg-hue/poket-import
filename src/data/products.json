@@ -1,0 +1,2531 @@
+[
+  {
+    "id": "french-avenue-liquid-brun",
+    "brand": "French Avenue",
+    "name": "Liquid Brun",
+    "ml": 100,
+    "price": 62000,
+    "searchQuery": "French Avenue Liquid Brun",
+    "enriched": true,
+    "gender": "masculino",
+    "family": "Amaderada",
+    "year": 2024,
+    "perfumer": null,
+    "description": "Liquid Brun de French Avenue es una fragancia de la familia olfativa Amaderada para Hombres. Liquid Brun se lanzó en 2024.",
+    "accords": [
+      {
+        "name": "dulce",
+        "intensity": 100
+      },
+      {
+        "name": "cálido especiado",
+        "intensity": 98
+      },
+      {
+        "name": "avainillado",
+        "intensity": 96
+      },
+      {
+        "name": "canela",
+        "intensity": 79
+      },
+      {
+        "name": "floral blanco",
+        "intensity": 62
+      },
+      {
+        "name": "atalcado",
+        "intensity": 61
+      },
+      {
+        "name": "cítrico",
+        "intensity": 59
+      },
+      {
+        "name": "aromático",
+        "intensity": 58
+      },
+      {
+        "name": "almizclado",
+        "intensity": 57
+      },
+      {
+        "name": "ámbar",
+        "intensity": 53
+      }
+    ],
+    "notes": {
+      "top": [
+        "canela",
+        "flor de azahar del naranjo",
+        "cardamomo",
+        "bergamota"
+      ],
+      "heart": [
+        "vainilla Bourbon",
+        "elemí"
+      ],
+      "base": [
+        "praliné",
+        "ambroxan",
+        "madera de gaiac",
+        "almizcle"
+      ],
+      "flat": []
+    },
+    "fragranticaUrl": "https://www.fragrantica.es/perfume/French-Avenue/Liquid-Brun-94713.html",
+    "image": "/img/french-avenue-liquid-brun.jpg"
+  },
+  {
+    "id": "lattafa-the-kingdom-masc",
+    "brand": "Lattafa",
+    "name": "The Kingdom (Masculino)",
+    "ml": 100,
+    "price": 42000,
+    "searchQuery": "Lattafa The Kingdom",
+    "enriched": true,
+    "gender": "masculino",
+    "family": "Aromática",
+    "year": 2024,
+    "perfumer": null,
+    "description": "The Kingdom For Men de Lattafa Perfumes es una fragancia de la familia olfativa Aromática para Hombres. Esta fragrancia es nueva.",
+    "accords": [
+      {
+        "name": "avainillado",
+        "intensity": 100
+      },
+      {
+        "name": "aromático",
+        "intensity": 81
+      },
+      {
+        "name": "dulce",
+        "intensity": 67
+      },
+      {
+        "name": "ámbar",
+        "intensity": 66
+      },
+      {
+        "name": "lavanda",
+        "intensity": 61
+      },
+      {
+        "name": "verde",
+        "intensity": 61
+      },
+      {
+        "name": "fresco especiado",
+        "intensity": 55
+      },
+      {
+        "name": "tabaco",
+        "intensity": 53
+      },
+      {
+        "name": "herbal",
+        "intensity": 45
+      },
+      {
+        "name": "balsámico",
+        "intensity": 44
+      }
+    ],
+    "notes": {
+      "top": [
+        "lavanda",
+        "menta",
+        "salvia"
+      ],
+      "heart": [
+        "vainilla",
+        "tabaco",
+        "flor de azahar del naranjo"
+      ],
+      "base": [
+        "haba tonka",
+        "benjuí",
+        "ládano"
+      ],
+      "flat": []
+    },
+    "fragranticaUrl": "https://www.fragrantica.es/perfume/Lattafa-Perfumes/The-Kingdom-For-Men-97995.html",
+    "image": "/img/lattafa-the-kingdom-masc.jpg"
+  },
+  {
+    "id": "afnan-9pm-black",
+    "brand": "Afnan",
+    "name": "9PM Black",
+    "ml": 100,
+    "price": 43500,
+    "searchQuery": "Afnan 9PM",
+    "enriched": true,
+    "gender": "masculino",
+    "family": "Oriental Vainilla",
+    "year": 2020,
+    "perfumer": null,
+    "description": "9pm de Afnan es una fragancia de la familia olfativa Oriental Vainilla para Hombres. 9pm se lanzó en 2020.",
+    "accords": [
+      {
+        "name": "avainillado",
+        "intensity": 100
+      },
+      {
+        "name": "ámbar",
+        "intensity": 63
+      },
+      {
+        "name": "cálido especiado",
+        "intensity": 60
+      },
+      {
+        "name": "afrutados",
+        "intensity": 57
+      },
+      {
+        "name": "canela",
+        "intensity": 55
+      },
+      {
+        "name": "dulce",
+        "intensity": 55
+      },
+      {
+        "name": "lavanda",
+        "intensity": 54
+      },
+      {
+        "name": "aromático",
+        "intensity": 51
+      },
+      {
+        "name": "fresco",
+        "intensity": 51
+      },
+      {
+        "name": "cítrico",
+        "intensity": 51
+      }
+    ],
+    "notes": {
+      "top": [
+        "manzana",
+        "canela",
+        "lavanda silvestre",
+        "bergamota"
+      ],
+      "heart": [
+        "flor de azahar del naranjo",
+        "lirio de los valles (muguete)"
+      ],
+      "base": [
+        "vainilla",
+        "haba tonka",
+        "ámbar",
+        "pachulí"
+      ],
+      "flat": []
+    },
+    "fragranticaUrl": "https://www.fragrantica.es/perfume/Afnan/9pm-65414.html",
+    "image": "/img/afnan-9pm-black.jpg",
+    "mustMatch": [
+      "9pm"
+    ],
+    "mustNotMatch": [
+      "elixir",
+      "night",
+      "femme",
+      "rebel",
+      "9am",
+      "dive",
+      "pour"
+    ]
+  },
+  {
+    "id": "lattafa-khamrah",
+    "brand": "Lattafa",
+    "name": "Khamrah",
+    "ml": 100,
+    "price": 41000,
+    "searchQuery": "Lattafa Khamrah",
+    "enriched": true,
+    "gender": "unisex",
+    "family": "Oriental Especiada",
+    "year": 2022,
+    "perfumer": null,
+    "description": "Khamrah de Lattafa Perfumes es una fragancia de la familia olfativa Oriental Especiada para Hombres y Mujeres. Khamrah se lanzó en 2022.",
+    "accords": [
+      {
+        "name": "dulce",
+        "intensity": 100
+      },
+      {
+        "name": "cálido especiado",
+        "intensity": 82
+      },
+      {
+        "name": "avainillado",
+        "intensity": 80
+      },
+      {
+        "name": "ámbar",
+        "intensity": 77
+      },
+      {
+        "name": "canela",
+        "intensity": 68
+      },
+      {
+        "name": "amaderado",
+        "intensity": 49
+      },
+      {
+        "name": "fresco especiado",
+        "intensity": 48
+      },
+      {
+        "name": "afrutados",
+        "intensity": 44
+      }
+    ],
+    "notes": {
+      "top": [
+        "canela",
+        "nuez moscada",
+        "bergamota"
+      ],
+      "heart": [
+        "dátiles",
+        "praliné",
+        "nardos",
+        "Mahonial"
+      ],
+      "base": [
+        "vainilla",
+        "haba tonka",
+        "Amberwood",
+        "mirra",
+        "benjuí",
+        "Akigalawood"
+      ],
+      "flat": []
+    },
+    "fragranticaUrl": "https://www.fragrantica.es/perfume/Lattafa-Perfumes/Khamrah-75805.html",
+    "image": "/img/lattafa-khamrah.jpg"
+  },
+  {
+    "id": "lattafa-mayar-cherry-intense",
+    "brand": "Lattafa",
+    "name": "Mayar Cherry Intense",
+    "ml": 100,
+    "price": 36500,
+    "searchQuery": "Lattafa Mayar Cherry Intense",
+    "enriched": true,
+    "gender": "unisex",
+    "family": "Oriental Vainilla",
+    "year": 2024,
+    "perfumer": null,
+    "description": "Mayar Cherry Intense de Lattafa Perfumes es una fragancia de la familia olfativa Oriental Vainilla para Hombres y Mujeres. Esta fragrancia es nueva.",
+    "accords": [
+      {
+        "name": "cacao",
+        "intensity": 100
+      },
+      {
+        "name": "dulce",
+        "intensity": 86
+      },
+      {
+        "name": "cálido especiado",
+        "intensity": 83
+      },
+      {
+        "name": "afrutados",
+        "intensity": 78
+      },
+      {
+        "name": "avainillado",
+        "intensity": 72
+      },
+      {
+        "name": "ámbar",
+        "intensity": 61
+      },
+      {
+        "name": "pachulí",
+        "intensity": 51
+      },
+      {
+        "name": "atalcado",
+        "intensity": 49
+      }
+    ],
+    "notes": {
+      "top": [
+        "fresa",
+        "bergamota"
+      ],
+      "heart": [
+        "Mermelada de cereza",
+        "cacao"
+      ],
+      "base": [
+        "vainilla",
+        "ámbar",
+        "pachulí"
+      ],
+      "flat": []
+    },
+    "fragranticaUrl": "https://www.fragrantica.es/perfume/Lattafa-Perfumes/Mayar-Cherry-Intense-99872.html",
+    "image": "/img/lattafa-mayar-cherry-intense.jpg"
+  },
+  {
+    "id": "armaf-odyssey-candee",
+    "brand": "Armaf",
+    "name": "Odyssey Candee",
+    "ml": 100,
+    "price": 38000,
+    "searchQuery": "Armaf Odyssey Candee",
+    "enriched": true,
+    "gender": "femenino",
+    "family": null,
+    "year": 2024,
+    "perfumer": null,
+    "description": "Odyssey Candee de Armaf es una fragancia de la familia olfativa para Mujeres. Esta fragrancia es nueva.",
+    "accords": [
+      {
+        "name": "afrutados",
+        "intensity": 100
+      },
+      {
+        "name": "dulce",
+        "intensity": 88
+      },
+      {
+        "name": "pachulí",
+        "intensity": 61
+      },
+      {
+        "name": "caramelo",
+        "intensity": 52
+      },
+      {
+        "name": "amaderado",
+        "intensity": 50
+      },
+      {
+        "name": "cálido especiado",
+        "intensity": 49
+      },
+      {
+        "name": "fresco especiado",
+        "intensity": 49
+      },
+      {
+        "name": "almizclado",
+        "intensity": 49
+      },
+      {
+        "name": "aromático",
+        "intensity": 45
+      },
+      {
+        "name": "floral blanco",
+        "intensity": 45
+      }
+    ],
+    "notes": {
+      "top": [
+        "fresa",
+        "frambuesa",
+        "geranio",
+        "durazno (melocotón)",
+        "bergamota"
+      ],
+      "heart": [
+        "caramelo",
+        "jazmín",
+        "maracuyá (fruta de la pasión)"
+      ],
+      "base": [
+        "pachulí",
+        "almizcle",
+        "ámbar"
+      ],
+      "flat": []
+    },
+    "fragranticaUrl": "https://www.fragrantica.es/perfume/Armaf/Odyssey-Candee-96990.html",
+    "image": "/img/armaf-odyssey-candee.jpg"
+  },
+  {
+    "id": "lattafa-yara-candy",
+    "brand": "Lattafa",
+    "name": "Yara Candy",
+    "ml": 100,
+    "price": 38000,
+    "searchQuery": "Lattafa Yara Candy",
+    "enriched": true,
+    "gender": "femenino",
+    "family": "Floral Frutal Gourmand",
+    "year": 2024,
+    "perfumer": null,
+    "description": "Yara Candy de Lattafa Perfumes es una fragancia de la familia olfativa Floral Frutal Gourmand para Mujeres. Esta fragrancia es nueva.",
+    "accords": [
+      {
+        "name": "avainillado",
+        "intensity": 100
+      },
+      {
+        "name": "afrutados",
+        "intensity": 84
+      },
+      {
+        "name": "atalcado",
+        "intensity": 76
+      },
+      {
+        "name": "cítrico",
+        "intensity": 70
+      },
+      {
+        "name": "floral blanco",
+        "intensity": 66
+      },
+      {
+        "name": "aromático",
+        "intensity": 65
+      },
+      {
+        "name": "amaderado",
+        "intensity": 62
+      },
+      {
+        "name": "almizclado",
+        "intensity": 58
+      },
+      {
+        "name": "especiado suave",
+        "intensity": 58
+      },
+      {
+        "name": "animálico",
+        "intensity": 54
+      }
+    ],
+    "notes": {
+      "top": [
+        "grosellas negras",
+        "Mandarina verde"
+      ],
+      "heart": [
+        "Caramelo de fresa efervescente",
+        "gardenia"
+      ],
+      "base": [
+        "vainilla",
+        "almizcle",
+        "ámbar",
+        "sándalo"
+      ],
+      "flat": []
+    },
+    "fragranticaUrl": "https://www.fragrantica.es/perfume/Lattafa-Perfumes/Yara-Candy-95752.html",
+    "image": "/img/lattafa-yara-candy.jpg"
+  },
+  {
+    "id": "lattafa-the-kingdom-fem",
+    "brand": "Lattafa",
+    "name": "The Kingdom (Femenino)",
+    "ml": 100,
+    "price": 41000,
+    "searchQuery": "Lattafa The Kingdom",
+    "enriched": true,
+    "gender": "femenino",
+    "family": "Floral Frutal Gourmand",
+    "year": 2024,
+    "perfumer": null,
+    "description": "The Kingdom For Women de Lattafa Perfumes es una fragancia de la familia olfativa Floral Frutal Gourmand para Mujeres. Esta fragrancia es nueva.",
+    "accords": [
+      {
+        "name": "dulce",
+        "intensity": 100
+      },
+      {
+        "name": "fresco",
+        "intensity": 78
+      },
+      {
+        "name": "afrutados",
+        "intensity": 77
+      },
+      {
+        "name": "avainillado",
+        "intensity": 76
+      },
+      {
+        "name": "florales",
+        "intensity": 66
+      },
+      {
+        "name": "atalcado",
+        "intensity": 64
+      },
+      {
+        "name": "ámbar",
+        "intensity": 60
+      },
+      {
+        "name": "almizclado",
+        "intensity": 58
+      },
+      {
+        "name": "amaderado",
+        "intensity": 53
+      },
+      {
+        "name": "aromático",
+        "intensity": 52
+      }
+    ],
+    "notes": {
+      "top": [
+        "pera",
+        "peonía",
+        "casis (grosellero negro)"
+      ],
+      "heart": [
+        "praliné",
+        "haba tonka",
+        "jazmín"
+      ],
+      "base": [
+        "vainilla",
+        "almizcle",
+        "sándalo",
+        "ámbar"
+      ],
+      "flat": []
+    },
+    "fragranticaUrl": "https://www.fragrantica.es/perfume/Lattafa-Perfumes/The-Kingdom-For-Women-98648.html",
+    "image": "/img/lattafa-the-kingdom-fem.jpg"
+  },
+  {
+    "id": "lattafa-fakhar-rose-gold",
+    "brand": "Lattafa",
+    "name": "Fakhar Rose Gold",
+    "ml": 100,
+    "price": 48000,
+    "searchQuery": "Lattafa Fakhar Gold",
+    "enriched": true,
+    "gender": "femenino",
+    "family": "Floral",
+    "year": 2022,
+    "perfumer": null,
+    "description": "Fakhar Rose de Lattafa Perfumes es una fragancia de la familia olfativa Floral para Mujeres. Fakhar Rose se lanzó en 2022.",
+    "accords": [
+      {
+        "name": "floral blanco",
+        "intensity": 100
+      },
+      {
+        "name": "afrutados",
+        "intensity": 55
+      },
+      {
+        "name": "nardos",
+        "intensity": 54
+      },
+      {
+        "name": "dulce",
+        "intensity": 47
+      },
+      {
+        "name": "amaderado",
+        "intensity": 46
+      },
+      {
+        "name": "animálico",
+        "intensity": 45
+      },
+      {
+        "name": "florales",
+        "intensity": 44
+      }
+    ],
+    "notes": {
+      "top": [
+        "frutas",
+        "azucena",
+        "granada",
+        "aldehídos"
+      ],
+      "heart": [
+        "nardos",
+        "jazmín",
+        "gardenia",
+        "ylang-ylang",
+        "rosa",
+        "madreselva",
+        "peonía"
+      ],
+      "base": [
+        "vainilla",
+        "almizcle blanco",
+        "sándalo",
+        "ambroxan"
+      ],
+      "flat": []
+    },
+    "fragranticaUrl": "https://www.fragrantica.es/perfume/Lattafa-Perfumes/Fakhar-Rose-70466.html",
+    "image": "/img/lattafa-fakhar-rose-gold.jpg"
+  },
+  {
+    "id": "maison-alhambra-yeah-man",
+    "brand": "Maison Alhambra",
+    "name": "Yeah Man",
+    "ml": 100,
+    "price": 30500,
+    "searchQuery": "Maison Alhambra Yeah Man",
+    "enriched": true,
+    "gender": "masculino",
+    "family": "Aromática",
+    "year": 2022,
+    "perfumer": null,
+    "description": "Yeah! Parfum de Maison Alhambra es una fragancia de la familia olfativa Aromática para Hombres. Yeah! Parfum se lanzó en 2022.",
+    "accords": [
+      {
+        "name": "fresco especiado",
+        "intensity": 100
+      },
+      {
+        "name": "fresco",
+        "intensity": 90
+      },
+      {
+        "name": "aromático",
+        "intensity": 84
+      },
+      {
+        "name": "aldehídico",
+        "intensity": 69
+      },
+      {
+        "name": "afrutados",
+        "intensity": 68
+      },
+      {
+        "name": "ámbar",
+        "intensity": 66
+      },
+      {
+        "name": "cítrico",
+        "intensity": 59
+      },
+      {
+        "name": "amaderado",
+        "intensity": 58
+      },
+      {
+        "name": "lavanda",
+        "intensity": 58
+      },
+      {
+        "name": "herbal",
+        "intensity": 57
+      }
+    ],
+    "notes": {
+      "top": [
+        "manzana",
+        "aldehídos",
+        "jengibre",
+        "toronja (pomelo)"
+      ],
+      "heart": [
+        "lavanda",
+        "salvia",
+        "geranio"
+      ],
+      "base": [
+        "haba tonka",
+        "Incienso",
+        "cedro",
+        "pachulí"
+      ],
+      "flat": []
+    },
+    "fragranticaUrl": "https://www.fragrantica.es/perfume/Maison-Alhambra/Yeah-Parfum-94159.html",
+    "image": "/img/maison-alhambra-yeah-man.jpg",
+    "mustMatch": [
+      "yeah",
+      "man"
+    ]
+  },
+  {
+    "id": "lattafa-khamrah-waha",
+    "brand": "Lattafa",
+    "name": "Khamrah Waha",
+    "ml": 100,
+    "price": 84000,
+    "searchQuery": "Lattafa Khamrah Waha",
+    "enriched": true,
+    "gender": "unisex",
+    "family": "Aromática Acuática",
+    "year": 2026,
+    "perfumer": null,
+    "description": "Khamrah Waha de Lattafa Perfumes es una fragancia de la familia olfativa Aromática Acuática para Hombres y Mujeres. Esta fragrancia es nueva.",
+    "accords": [
+      {
+        "name": "cítrico",
+        "intensity": 100
+      },
+      {
+        "name": "fresco especiado",
+        "intensity": 95
+      },
+      {
+        "name": "avainillado",
+        "intensity": 90
+      },
+      {
+        "name": "aromático",
+        "intensity": 85
+      },
+      {
+        "name": "amaderado",
+        "intensity": 68
+      },
+      {
+        "name": "atalcado",
+        "intensity": 64
+      },
+      {
+        "name": "dulce",
+        "intensity": 60
+      },
+      {
+        "name": "ozónico",
+        "intensity": 57
+      },
+      {
+        "name": "verde",
+        "intensity": 57
+      },
+      {
+        "name": "almizclado",
+        "intensity": 55
+      }
+    ],
+    "notes": {
+      "top": [
+        "bergamota",
+        "yuzu",
+        "enebro",
+        "jengibre"
+      ],
+      "heart": [
+        "pepino",
+        "sal de mar",
+        "salvia",
+        "iris"
+      ],
+      "base": [
+        "vainilla",
+        "haba tonka",
+        "Akigalawood",
+        "almizcle",
+        "Ambrofix™"
+      ],
+      "flat": []
+    },
+    "fragranticaUrl": "https://www.fragrantica.es/perfume/Lattafa-Perfumes/Khamrah-Waha-132409.html",
+    "image": "/img/lattafa-khamrah-waha.jpg"
+  },
+  {
+    "id": "lattafa-badee-al-oud-sublime",
+    "brand": "Lattafa",
+    "name": "Badee Al Oud Sublime",
+    "ml": 100,
+    "price": 39500,
+    "searchQuery": "Lattafa Badee Al Oud Sublime",
+    "enriched": true,
+    "gender": "unisex",
+    "family": "Amaderada Aromática",
+    "year": 2023,
+    "perfumer": null,
+    "description": "Bade'e Al Oud Sublime de Lattafa Perfumes es una fragancia de la familia olfativa Amaderada Aromática para Hombres y Mujeres. Bade'e Al Oud Sublime se lanzó en 2023.",
+    "accords": [
+      {
+        "name": "afrutados",
+        "intensity": 100
+      },
+      {
+        "name": "fresco",
+        "intensity": 61
+      },
+      {
+        "name": "tropical",
+        "intensity": 47
+      },
+      {
+        "name": "rosas",
+        "intensity": 46
+      },
+      {
+        "name": "musgoso",
+        "intensity": 45
+      },
+      {
+        "name": "verde",
+        "intensity": 45
+      },
+      {
+        "name": "terrosos",
+        "intensity": 45
+      }
+    ],
+    "notes": {
+      "top": [
+        "manzana",
+        "lichi",
+        "rosa"
+      ],
+      "heart": [
+        "ciruela",
+        "jazmín"
+      ],
+      "base": [
+        "musgo",
+        "vainilla",
+        "pachulí"
+      ],
+      "flat": []
+    },
+    "fragranticaUrl": "https://www.fragrantica.es/perfume/Lattafa-Perfumes/Bade-e-Al-Oud-Sublime-83309.html",
+    "image": "/img/lattafa-badee-al-oud-sublime.jpg"
+  },
+  {
+    "id": "rasasi-hawas-viper",
+    "brand": "Rasasi",
+    "name": "Hawas Viper",
+    "ml": 100,
+    "price": 71000,
+    "searchQuery": "Rasasi Hawas Viper",
+    "enriched": true,
+    "gender": "masculino",
+    "family": "Oriental",
+    "year": 2025,
+    "perfumer": null,
+    "description": "Hawas Viper de Rasasi es una fragancia de la familia olfativa Oriental para Hombres. Esta fragrancia es nueva.",
+    "accords": [
+      {
+        "name": "cálido especiado",
+        "intensity": 100
+      },
+      {
+        "name": "tabaco",
+        "intensity": 96
+      },
+      {
+        "name": "aromático",
+        "intensity": 93
+      },
+      {
+        "name": "dulce",
+        "intensity": 81
+      },
+      {
+        "name": "verde",
+        "intensity": 81
+      },
+      {
+        "name": "Cannabis",
+        "intensity": 61
+      },
+      {
+        "name": "café",
+        "intensity": 59
+      },
+      {
+        "name": "almizclado",
+        "intensity": 57
+      },
+      {
+        "name": "afrutados",
+        "intensity": 55
+      },
+      {
+        "name": "amaderado",
+        "intensity": 55
+      }
+    ],
+    "notes": {
+      "top": [
+        "azafrán",
+        "marihuana (cannabis)",
+        "tomillo",
+        "notas verdes",
+        "Davana"
+      ],
+      "heart": [
+        "tabaco",
+        "café",
+        "canela",
+        "violeta",
+        "frambuesa"
+      ],
+      "base": [
+        "bálsamo de Gurjum",
+        "almizcle",
+        "haba tonka"
+      ],
+      "flat": []
+    },
+    "fragranticaUrl": "https://www.fragrantica.es/perfume/Rasasi/Hawas-Viper-113594.html",
+    "image": "/img/rasasi-hawas-viper.jpg"
+  },
+  {
+    "id": "rasasi-hawas-atlantis",
+    "brand": "Rasasi",
+    "name": "Hawas Atlantis",
+    "ml": 100,
+    "price": 68000,
+    "searchQuery": "Rasasi Hawas Atlantis",
+    "enriched": true,
+    "gender": "unisex",
+    "family": null,
+    "year": 2025,
+    "perfumer": null,
+    "description": "Hawas Atlantis de Rasasi es una fragancia de la familia olfativa para Hombres y Mujeres. Esta fragrancia es nueva.",
+    "accords": [
+      {
+        "name": "amaderado",
+        "intensity": 100
+      },
+      {
+        "name": "cítrico",
+        "intensity": 79
+      },
+      {
+        "name": "acuático",
+        "intensity": 75
+      },
+      {
+        "name": "cálido especiado",
+        "intensity": 65
+      },
+      {
+        "name": "marino",
+        "intensity": 63
+      },
+      {
+        "name": "fresco",
+        "intensity": 62
+      },
+      {
+        "name": "ámbar",
+        "intensity": 62
+      },
+      {
+        "name": "afrutados",
+        "intensity": 59
+      },
+      {
+        "name": "pachulí",
+        "intensity": 59
+      },
+      {
+        "name": "animálico",
+        "intensity": 54
+      }
+    ],
+    "notes": {
+      "top": [
+        "bergamota",
+        "limón (lima ácida)",
+        "manzana",
+        "canela"
+      ],
+      "heart": [
+        "notas acuosas",
+        "ciruela",
+        "cardamomo",
+        "flor de azahar del naranjo"
+      ],
+      "base": [
+        "trozos de madera a la deriva",
+        "ámbar gris",
+        "pachulí",
+        "almizcle"
+      ],
+      "flat": []
+    },
+    "fragranticaUrl": "https://www.fragrantica.es/perfume/Rasasi/Hawas-Atlantis-112309.html",
+    "image": "/img/rasasi-hawas-atlantis.jpg"
+  },
+  {
+    "id": "rasasi-hawas-tropical",
+    "brand": "Rasasi",
+    "name": "Hawas Tropical",
+    "ml": 100,
+    "price": 57000,
+    "searchQuery": "Rasasi Hawas Tropical",
+    "enriched": true,
+    "gender": "masculino",
+    "family": "Aromática Verde",
+    "year": 2025,
+    "perfumer": null,
+    "description": "Hawas Tropical de Rasasi es una fragancia de la familia olfativa Aromática Verde para Hombres. Esta fragrancia es nueva.",
+    "accords": [
+      {
+        "name": "dulce",
+        "intensity": 100
+      },
+      {
+        "name": "coco",
+        "intensity": 99
+      },
+      {
+        "name": "verde",
+        "intensity": 96
+      },
+      {
+        "name": "amaderado",
+        "intensity": 86
+      },
+      {
+        "name": "avainillado",
+        "intensity": 72
+      },
+      {
+        "name": "afrutados",
+        "intensity": 68
+      },
+      {
+        "name": "aromático",
+        "intensity": 67
+      },
+      {
+        "name": "lactónico",
+        "intensity": 63
+      },
+      {
+        "name": "fresco especiado",
+        "intensity": 61
+      },
+      {
+        "name": "fresco",
+        "intensity": 59
+      }
+    ],
+    "notes": {
+      "top": [
+        "Agua de coco",
+        "hojas de higuera",
+        "jengibre"
+      ],
+      "heart": [
+        "coco",
+        "higo",
+        "menta"
+      ],
+      "base": [
+        "sándalo",
+        "haba tonka",
+        "almizcle"
+      ],
+      "flat": []
+    },
+    "fragranticaUrl": "https://www.fragrantica.es/perfume/Rasasi/Hawas-Tropical-108054.html",
+    "image": "/img/rasasi-hawas-tropical.jpg"
+  },
+  {
+    "id": "lattafa-khamrah-qahwa",
+    "brand": "Lattafa",
+    "name": "Khamrah Qahwa",
+    "ml": 100,
+    "price": 40000,
+    "searchQuery": "Lattafa Khamrah Qahwa",
+    "enriched": true,
+    "gender": "unisex",
+    "family": "Oriental Vainilla",
+    "year": 2023,
+    "perfumer": null,
+    "description": "Khamrah Qahwa de Lattafa Perfumes es una fragancia de la familia olfativa Oriental Vainilla para Hombres y Mujeres. Khamrah Qahwa se lanzó en 2023.",
+    "accords": [
+      {
+        "name": "cálido especiado",
+        "intensity": 100
+      },
+      {
+        "name": "dulce",
+        "intensity": 88
+      },
+      {
+        "name": "avainillado",
+        "intensity": 81
+      },
+      {
+        "name": "canela",
+        "intensity": 64
+      },
+      {
+        "name": "café",
+        "intensity": 61
+      },
+      {
+        "name": "ámbar",
+        "intensity": 52
+      },
+      {
+        "name": "atalcado",
+        "intensity": 45
+      }
+    ],
+    "notes": {
+      "top": [
+        "canela",
+        "cardamomo",
+        "jengibre"
+      ],
+      "heart": [
+        "praliné",
+        "Frutas confitadas",
+        "flores blancas"
+      ],
+      "base": [
+        "vainilla",
+        "café",
+        "haba tonka",
+        "benjuí",
+        "almizcle"
+      ],
+      "flat": []
+    },
+    "fragranticaUrl": "https://www.fragrantica.es/perfume/Lattafa-Perfumes/Khamrah-Qahwa-88175.html",
+    "image": "/img/lattafa-khamrah-qahwa.jpg"
+  },
+  {
+    "id": "armaf-odyssey-mandarin-sky",
+    "brand": "Armaf",
+    "name": "Odyssey Mandarin Sky",
+    "ml": 100,
+    "price": 46000,
+    "searchQuery": "Armaf Odyssey Mandarin Sky",
+    "enriched": true,
+    "gender": "masculino",
+    "family": null,
+    "year": 2023,
+    "perfumer": null,
+    "description": "Odyssey Mandarin Sky de Armaf es una fragancia de la familia olfativa para Hombres. Odyssey Mandarin Sky se lanzó en 2023.",
+    "accords": [
+      {
+        "name": "cítrico",
+        "intensity": 100
+      },
+      {
+        "name": "caramelo",
+        "intensity": 75
+      },
+      {
+        "name": "dulce",
+        "intensity": 73
+      },
+      {
+        "name": "ámbar",
+        "intensity": 58
+      },
+      {
+        "name": "aromático",
+        "intensity": 55
+      },
+      {
+        "name": "avainillado",
+        "intensity": 49
+      },
+      {
+        "name": "amaderado",
+        "intensity": 47
+      }
+    ],
+    "notes": {
+      "top": [
+        "mandarina",
+        "naranja",
+        "azafrán",
+        "salvia"
+      ],
+      "heart": [
+        "caramelo",
+        "haba tonka",
+        "cempasúchil (tagete",
+        "clavelón)"
+      ],
+      "base": [
+        "ambroxan",
+        "cedro",
+        "vetiver"
+      ],
+      "flat": []
+    },
+    "fragranticaUrl": "https://www.fragrantica.es/perfume/Armaf/Odyssey-Mandarin-Sky-83132.html",
+    "image": "/img/armaf-odyssey-mandarin-sky.jpg",
+    "mustMatch": [
+      "mandarin",
+      "sky"
+    ],
+    "mustNotMatch": [
+      "elixir",
+      "body mist",
+      "vintage"
+    ]
+  },
+  {
+    "id": "lattafa-asad-bourbon",
+    "brand": "Lattafa",
+    "name": "Asad Bourbon",
+    "ml": 100,
+    "price": 52500,
+    "searchQuery": "Lattafa Asad Bourbon",
+    "enriched": true,
+    "gender": "masculino",
+    "family": "Oriental Especiada",
+    "year": 2025,
+    "perfumer": null,
+    "description": "Asad Bourbon de Lattafa Perfumes es una fragancia de la familia olfativa Oriental Especiada para Hombres. Esta fragrancia es nueva.",
+    "accords": [
+      {
+        "name": "avainillado",
+        "intensity": 100
+      },
+      {
+        "name": "cacao",
+        "intensity": 90
+      },
+      {
+        "name": "dulce",
+        "intensity": 76
+      },
+      {
+        "name": "lavanda",
+        "intensity": 76
+      },
+      {
+        "name": "fresco especiado",
+        "intensity": 71
+      },
+      {
+        "name": "cálido especiado",
+        "intensity": 66
+      },
+      {
+        "name": "ámbar",
+        "intensity": 65
+      },
+      {
+        "name": "aromático",
+        "intensity": 62
+      },
+      {
+        "name": "atalcado",
+        "intensity": 59
+      },
+      {
+        "name": "especiado suave",
+        "intensity": 56
+      }
+    ],
+    "notes": {
+      "top": [
+        "lavanda",
+        "ciruela Mirabel",
+        "pimienta rosa"
+      ],
+      "heart": [
+        "cacao",
+        "nuez moscada",
+        "Davana"
+      ],
+      "base": [
+        "vainilla Bourbon",
+        "ámbar",
+        "vetiver"
+      ],
+      "flat": []
+    },
+    "fragranticaUrl": "https://www.fragrantica.es/perfume/Lattafa-Perfumes/Asad-Bourbon-101124.html",
+    "image": "/img/lattafa-asad-bourbon.jpg"
+  },
+  {
+    "id": "zimaya-tiramisu-caramel",
+    "brand": "Zimaya",
+    "name": "Tiramisu Caramel",
+    "ml": 100,
+    "price": 47500,
+    "searchQuery": "Zimaya Tiramisu Caramel",
+    "enriched": true,
+    "gender": "unisex",
+    "family": "Oriental Vainilla",
+    "year": 2024,
+    "perfumer": null,
+    "description": "Tiramisu Caramel de Zimaya es una fragancia de la familia olfativa Oriental Vainilla para Hombres y Mujeres. Esta fragrancia es nueva.",
+    "accords": [
+      {
+        "name": "avainillado",
+        "intensity": 100
+      },
+      {
+        "name": "dulce",
+        "intensity": 98
+      },
+      {
+        "name": "caramelo",
+        "intensity": 90
+      },
+      {
+        "name": "amaderado",
+        "intensity": 73
+      },
+      {
+        "name": "amielado",
+        "intensity": 70
+      },
+      {
+        "name": "atalcado",
+        "intensity": 60
+      },
+      {
+        "name": "Whisky",
+        "intensity": 58
+      },
+      {
+        "name": "balsámico",
+        "intensity": 55
+      },
+      {
+        "name": "almizclado",
+        "intensity": 53
+      },
+      {
+        "name": "cálido especiado",
+        "intensity": 46
+      }
+    ],
+    "notes": {
+      "top": [],
+      "heart": [
+        "miel",
+        "cumarina",
+        "notas amaderadas"
+      ],
+      "base": [
+        "vainilla",
+        "whisky",
+        "almizcle"
+      ],
+      "flat": []
+    },
+    "fragranticaUrl": "https://www.fragrantica.es/perfume/Zimaya/Tiramisu-Caramel-98691.html",
+    "image": "/img/zimaya-tiramisu-caramel.jpg"
+  },
+  {
+    "id": "al-haramain-amber-oud-gold",
+    "brand": "Al Haramain",
+    "name": "Amber Oud Gold Edition",
+    "ml": 120,
+    "price": 83500,
+    "searchQuery": "Al Haramain Amber Oud Gold Edition",
+    "enriched": true,
+    "gender": "unisex",
+    "family": "Oriental Vainilla",
+    "year": 2024,
+    "perfumer": null,
+    "description": "Amber Oud Gold Edition de Al Haramain Perfumes es una fragancia de la familia olfativa Oriental Vainilla para Hombres y Mujeres. Amber Oud Gold Edition se lanzó en 2024.",
+    "accords": [
+      {
+        "name": "dulce",
+        "intensity": 100
+      },
+      {
+        "name": "afrutados",
+        "intensity": 93
+      },
+      {
+        "name": "ozónico",
+        "intensity": 74
+      },
+      {
+        "name": "avainillado",
+        "intensity": 72
+      },
+      {
+        "name": "atalcado",
+        "intensity": 71
+      },
+      {
+        "name": "almizclado",
+        "intensity": 70
+      },
+      {
+        "name": "fresco",
+        "intensity": 70
+      },
+      {
+        "name": "ámbar",
+        "intensity": 68
+      },
+      {
+        "name": "acuático",
+        "intensity": 68
+      },
+      {
+        "name": "cítrico",
+        "intensity": 60
+      }
+    ],
+    "notes": {
+      "top": [
+        "bergamota",
+        "notas verdes"
+      ],
+      "heart": [
+        "melón",
+        "piña",
+        "ámbar",
+        "Acorde goloso"
+      ],
+      "base": [
+        "vainilla",
+        "almizcle",
+        "notas amaderadas"
+      ],
+      "flat": []
+    },
+    "fragranticaUrl": "https://www.fragrantica.es/perfume/Al-Haramain-Perfumes/Amber-Oud-Gold-Edition-51816.html",
+    "image": "/img/al-haramain-amber-oud-gold.jpg"
+  },
+  {
+    "id": "french-avenue-vulcan-feu",
+    "brand": "French Avenue",
+    "name": "Vulcan Feu",
+    "ml": 100,
+    "price": 69500,
+    "searchQuery": "French Avenue Vulcan Feu",
+    "enriched": true,
+    "gender": "unisex",
+    "family": "Floral",
+    "year": 2025,
+    "perfumer": null,
+    "description": "Vulcan Feu de French Avenue es una fragancia de la familia olfativa Floral para Hombres y Mujeres. Esta fragrancia es nueva.",
+    "accords": [
+      {
+        "name": "tropical",
+        "intensity": 100
+      },
+      {
+        "name": "afrutados",
+        "intensity": 99
+      },
+      {
+        "name": "dulce",
+        "intensity": 93
+      },
+      {
+        "name": "cítrico",
+        "intensity": 73
+      },
+      {
+        "name": "amaderado",
+        "intensity": 57
+      },
+      {
+        "name": "fresco",
+        "intensity": 56
+      },
+      {
+        "name": "fresco especiado",
+        "intensity": 55
+      },
+      {
+        "name": "aromático",
+        "intensity": 55
+      },
+      {
+        "name": "terpénico",
+        "intensity": 53
+      },
+      {
+        "name": "ámbar",
+        "intensity": 51
+      }
+    ],
+    "notes": {
+      "top": [
+        "mango",
+        "limón (lima ácida)",
+        "jengibre",
+        "ruibarbo"
+      ],
+      "heart": [
+        "pimienta rosa",
+        "jazmín",
+        "violeta",
+        "praliné"
+      ],
+      "base": [
+        "haba tonka",
+        "cedro",
+        "ámbar gris",
+        "musgo"
+      ],
+      "flat": []
+    },
+    "fragranticaUrl": "https://www.fragrantica.es/perfume/French-Avenue/Vulcan-Feu-105520.html",
+    "image": "/img/french-avenue-vulcan-feu.jpg"
+  },
+  {
+    "id": "french-avenue-veneno-negro",
+    "brand": "French Avenue",
+    "name": "Veneno Negro",
+    "ml": 100,
+    "price": 68000,
+    "searchQuery": "French Avenue Veneno",
+    "enriched": true,
+    "gender": "unisex",
+    "family": "Aromática Frutal",
+    "year": 2025,
+    "perfumer": null,
+    "description": "Veneno de French Avenue es una fragancia de la familia olfativa Aromática Frutal para Hombres y Mujeres. Esta fragrancia es nueva.",
+    "accords": [
+      {
+        "name": "ahumado",
+        "intensity": 100
+      },
+      {
+        "name": "afrutados",
+        "intensity": 97
+      },
+      {
+        "name": "canela",
+        "intensity": 93
+      },
+      {
+        "name": "tabaco",
+        "intensity": 87
+      },
+      {
+        "name": "cálido especiado",
+        "intensity": 81
+      },
+      {
+        "name": "avainillado",
+        "intensity": 80
+      },
+      {
+        "name": "fresco",
+        "intensity": 68
+      },
+      {
+        "name": "dulce",
+        "intensity": 68
+      },
+      {
+        "name": "verde",
+        "intensity": 61
+      },
+      {
+        "name": "musgoso",
+        "intensity": 50
+      }
+    ],
+    "notes": {
+      "top": [
+        "manzana",
+        "Humo",
+        "canela"
+      ],
+      "heart": [
+        "tabaco",
+        "musgo"
+      ],
+      "base": [
+        "vainilla Bourbon",
+        "Orcanox™"
+      ],
+      "flat": []
+    },
+    "fragranticaUrl": "https://www.fragrantica.es/perfume/French-Avenue/Veneno-105519.html",
+    "image": "/img/french-avenue-veneno-negro.jpg"
+  },
+  {
+    "id": "afnan-9pm-night-out",
+    "brand": "Afnan",
+    "name": "9PM Night Out",
+    "ml": 100,
+    "price": 80500,
+    "searchQuery": "Afnan 9PM Night Out",
+    "enriched": true,
+    "gender": "unisex",
+    "family": "Oriental Especiada",
+    "year": 2026,
+    "perfumer": null,
+    "description": "9 PM Night Out de Afnan es una fragancia de la familia olfativa Oriental Especiada para Hombres y Mujeres. Esta fragrancia es nueva.",
+    "accords": [
+      {
+        "name": "amaderado",
+        "intensity": 100
+      },
+      {
+        "name": "afrutados",
+        "intensity": 91
+      },
+      {
+        "name": "cálido especiado",
+        "intensity": 90
+      },
+      {
+        "name": "dulce",
+        "intensity": 82
+      },
+      {
+        "name": "tropical",
+        "intensity": 77
+      },
+      {
+        "name": "aromático",
+        "intensity": 74
+      },
+      {
+        "name": "lavanda",
+        "intensity": 64
+      },
+      {
+        "name": "florales",
+        "intensity": 61
+      },
+      {
+        "name": "avainillado",
+        "intensity": 58
+      },
+      {
+        "name": "ámbar",
+        "intensity": 53
+      }
+    ],
+    "notes": {
+      "top": [
+        "pitahaya",
+        "lavanda",
+        "coñac",
+        "manzana",
+        "bergamota"
+      ],
+      "heart": [
+        "tófe",
+        "gamuza",
+        "cardamomo",
+        "cedro",
+        "Mahonial"
+      ],
+      "base": [
+        "haba tonka",
+        "Akigalawood",
+        "Ambrofix™",
+        "pachulí"
+      ],
+      "flat": []
+    },
+    "fragranticaUrl": "https://www.fragrantica.es/perfume/Afnan/9-PM-Night-Out-123313.html",
+    "image": "/img/afnan-9pm-night-out.jpg"
+  },
+  {
+    "id": "lattafa-eclaire",
+    "brand": "Lattafa",
+    "name": "Eclaire",
+    "ml": 100,
+    "price": 49500,
+    "searchQuery": "Lattafa Eclaire",
+    "enriched": true,
+    "gender": "femenino",
+    "family": "Floral Frutal Gourmand",
+    "year": 2024,
+    "perfumer": null,
+    "description": "Eclaire de Lattafa Perfumes es una fragancia de la familia olfativa Floral Frutal Gourmand para Mujeres. Eclaire se lanzó en 2024.",
+    "accords": [
+      {
+        "name": "dulce",
+        "intensity": 100
+      },
+      {
+        "name": "avainillado",
+        "intensity": 70
+      },
+      {
+        "name": "caramelo",
+        "intensity": 64
+      },
+      {
+        "name": "lactónico",
+        "intensity": 60
+      },
+      {
+        "name": "amielado",
+        "intensity": 45
+      },
+      {
+        "name": "atalcado",
+        "intensity": 44
+      }
+    ],
+    "notes": {
+      "top": [
+        "caramelo",
+        "leche",
+        "azúcar"
+      ],
+      "heart": [
+        "miel",
+        "flores blancas"
+      ],
+      "base": [
+        "vainilla",
+        "praliné",
+        "almizcle"
+      ],
+      "flat": []
+    },
+    "fragranticaUrl": "https://www.fragrantica.es/perfume/Lattafa-Perfumes/Eclaire-93628.html",
+    "image": "/img/lattafa-eclaire.jpg"
+  },
+  {
+    "id": "lattafa-musamam-black-intense",
+    "brand": "Lattafa",
+    "name": "Musamam Black Intense",
+    "ml": 100,
+    "price": 62000,
+    "searchQuery": "Lattafa Musamam Black Intense",
+    "enriched": true,
+    "gender": "unisex",
+    "family": "Amaderada Aromática",
+    "year": 2025,
+    "perfumer": null,
+    "description": "Musamam Black Intense de Lattafa Perfumes es una fragancia de la familia olfativa Amaderada Aromática para Hombres y Mujeres. Esta fragrancia es nueva.",
+    "accords": [
+      {
+        "name": "fresco especiado",
+        "intensity": 100
+      },
+      {
+        "name": "amaderado",
+        "intensity": 98
+      },
+      {
+        "name": "aromático",
+        "intensity": 95
+      },
+      {
+        "name": "lavanda",
+        "intensity": 65
+      },
+      {
+        "name": "florales",
+        "intensity": 64
+      },
+      {
+        "name": "herbal",
+        "intensity": 61
+      },
+      {
+        "name": "avainillado",
+        "intensity": 59
+      },
+      {
+        "name": "dulce",
+        "intensity": 58
+      },
+      {
+        "name": "cálido especiado",
+        "intensity": 52
+      },
+      {
+        "name": "ámbar",
+        "intensity": 51
+      }
+    ],
+    "notes": {
+      "top": [
+        "lavanda",
+        "nuez moscada",
+        "salvia",
+        "bergamota"
+      ],
+      "heart": [
+        "cedro",
+        "geranio",
+        "Rosyfolia",
+        "Mahonial"
+      ],
+      "base": [
+        "Cocoapulse™",
+        "haba tonka",
+        "arce",
+        "Ambrofix™",
+        "pachulí"
+      ],
+      "flat": []
+    },
+    "fragranticaUrl": "https://www.fragrantica.es/perfume/Lattafa-Perfumes/Musamam-Black-Intense-119987.html",
+    "image": "/img/lattafa-musamam-black-intense.jpg"
+  },
+  {
+    "id": "armaf-odyssey-aqua",
+    "brand": "Armaf",
+    "name": "Odyssey Aqua",
+    "ml": 100,
+    "price": 54000,
+    "searchQuery": "Armaf Odyssey Aqua",
+    "enriched": true,
+    "gender": "masculino",
+    "family": "Amaderada Aromática",
+    "year": 2023,
+    "perfumer": null,
+    "description": "Odyssey Aqua Edition de Armaf es una fragancia de la familia olfativa Amaderada Aromática para Hombres. Odyssey Aqua Edition se lanzó en 2023.",
+    "accords": [
+      {
+        "name": "aromático",
+        "intensity": 100
+      },
+      {
+        "name": "cítrico",
+        "intensity": 89
+      },
+      {
+        "name": "fresco especiado",
+        "intensity": 88
+      },
+      {
+        "name": "verde",
+        "intensity": 73
+      },
+      {
+        "name": "amaderado",
+        "intensity": 61
+      },
+      {
+        "name": "ámbar",
+        "intensity": 59
+      },
+      {
+        "name": "herbal",
+        "intensity": 53
+      },
+      {
+        "name": "lavanda",
+        "intensity": 51
+      },
+      {
+        "name": "pachulí",
+        "intensity": 48
+      },
+      {
+        "name": "almizclado",
+        "intensity": 47
+      }
+    ],
+    "notes": {
+      "top": [
+        "naranja",
+        "toronja (pomelo)",
+        "abrótano"
+      ],
+      "heart": [
+        "menta",
+        "lavanda"
+      ],
+      "base": [
+        "ambroxan",
+        "ciprés",
+        "pachulí"
+      ],
+      "flat": []
+    },
+    "fragranticaUrl": "https://www.fragrantica.es/perfume/Armaf/Odyssey-Aqua-Edition-83134.html",
+    "image": "/img/armaf-odyssey-aqua.jpg"
+  },
+  {
+    "id": "lattafa-yara-elixir",
+    "brand": "Lattafa",
+    "name": "Yara Elixir",
+    "ml": 100,
+    "price": 50000,
+    "searchQuery": "Lattafa Yara Elixir",
+    "enriched": true,
+    "gender": "femenino",
+    "family": "Oriental Vainilla",
+    "year": 2025,
+    "perfumer": null,
+    "description": "Yara Elixir de Lattafa Perfumes es una fragancia de la familia olfativa Oriental Vainilla para Mujeres. Esta fragrancia es nueva.",
+    "accords": [
+      {
+        "name": "avainillado",
+        "intensity": 100
+      },
+      {
+        "name": "caramelo",
+        "intensity": 95
+      },
+      {
+        "name": "floral blanco",
+        "intensity": 82
+      },
+      {
+        "name": "dulce",
+        "intensity": 81
+      },
+      {
+        "name": "atalcado",
+        "intensity": 72
+      },
+      {
+        "name": "afrutados",
+        "intensity": 71
+      },
+      {
+        "name": "ámbar",
+        "intensity": 63
+      },
+      {
+        "name": "almizclado",
+        "intensity": 62
+      },
+      {
+        "name": "especiado suave",
+        "intensity": 55
+      },
+      {
+        "name": "animálico",
+        "intensity": 54
+      }
+    ],
+    "notes": {
+      "top": [
+        "S'mores de Fresa",
+        "grosellas negras"
+      ],
+      "heart": [
+        "jazmín",
+        "flor de azahar del naranjo"
+      ],
+      "base": [
+        "vainilla",
+        "caramelo",
+        "ámbar",
+        "almizcle"
+      ],
+      "flat": []
+    },
+    "fragranticaUrl": "https://www.fragrantica.es/perfume/Lattafa-Perfumes/Yara-Elixir-117615.html",
+    "image": "/img/lattafa-yara-elixir.jpg"
+  },
+  {
+    "id": "rasasi-hawas-for-him",
+    "brand": "Rasasi",
+    "name": "Hawas for Him",
+    "ml": 100,
+    "price": 46000,
+    "searchQuery": "Rasasi Hawas for Him",
+    "enriched": true,
+    "gender": "masculino",
+    "family": "Aromática Acuática",
+    "year": 2015,
+    "perfumer": null,
+    "description": "Hawas for Him de Rasasi es una fragancia de la familia olfativa Aromática Acuática para Hombres. Hawas for Him se lanzó en 2015.",
+    "accords": [
+      {
+        "name": "afrutados",
+        "intensity": 100
+      },
+      {
+        "name": "cítrico",
+        "intensity": 97
+      },
+      {
+        "name": "acuático",
+        "intensity": 87
+      },
+      {
+        "name": "fresco",
+        "intensity": 80
+      },
+      {
+        "name": "cálido especiado",
+        "intensity": 65
+      },
+      {
+        "name": "ámbar",
+        "intensity": 58
+      },
+      {
+        "name": "dulce",
+        "intensity": 58
+      },
+      {
+        "name": "almizclado",
+        "intensity": 55
+      },
+      {
+        "name": "aromático",
+        "intensity": 55
+      },
+      {
+        "name": "animálico",
+        "intensity": 54
+      }
+    ],
+    "notes": {
+      "top": [
+        "manzana",
+        "bergamota",
+        "limón (lima ácida)",
+        "canela"
+      ],
+      "heart": [
+        "notas acuosas",
+        "ciruela",
+        "flor de azahar del naranjo",
+        "cardamomo"
+      ],
+      "base": [
+        "ámbar gris",
+        "almizcle",
+        "pachulí",
+        "trozos de madera a la deriva"
+      ],
+      "flat": []
+    },
+    "fragranticaUrl": "https://www.fragrantica.es/perfume/Rasasi/Hawas-for-Him-46890.html",
+    "image": "/img/rasasi-hawas-for-him.jpg"
+  },
+  {
+    "id": "lattafa-yara-rosado",
+    "brand": "Lattafa",
+    "name": "Yara",
+    "ml": 100,
+    "price": 40000,
+    "searchQuery": "Lattafa Yara",
+    "enriched": true,
+    "gender": "femenino",
+    "family": "Oriental Vainilla",
+    "year": 2020,
+    "perfumer": null,
+    "description": "Yara de Lattafa Perfumes es una fragancia de la familia olfativa Oriental Vainilla para Mujeres. Yara se lanzó en 2020.",
+    "accords": [
+      {
+        "name": "dulce",
+        "intensity": 100
+      },
+      {
+        "name": "avainillado",
+        "intensity": 98
+      },
+      {
+        "name": "atalcado",
+        "intensity": 95
+      },
+      {
+        "name": "tropical",
+        "intensity": 63
+      },
+      {
+        "name": "almizclado",
+        "intensity": 61
+      },
+      {
+        "name": "afrutados",
+        "intensity": 61
+      },
+      {
+        "name": "florales",
+        "intensity": 57
+      },
+      {
+        "name": "cítrico",
+        "intensity": 47
+      }
+    ],
+    "notes": {
+      "top": [
+        "orquídea",
+        "heliotropo",
+        "naranja tangerina"
+      ],
+      "heart": [
+        "Acorde goloso",
+        "frutas tropicales"
+      ],
+      "base": [
+        "vainilla",
+        "almizcle",
+        "sándalo"
+      ],
+      "flat": []
+    },
+    "fragranticaUrl": "https://www.fragrantica.es/perfume/Lattafa-Perfumes/Yara-76880.html",
+    "image": "/img/lattafa-yara-rosado.jpg"
+  },
+  {
+    "id": "lattafa-nebras-elixir",
+    "brand": "Lattafa",
+    "name": "Nebras Elixir",
+    "ml": 100,
+    "price": 49500,
+    "searchQuery": "Lattafa Nebras Elixir",
+    "enriched": true,
+    "gender": "unisex",
+    "family": "Oriental Vainilla",
+    "year": 2025,
+    "perfumer": null,
+    "description": "Nebras Elixir de Lattafa Perfumes es una fragancia de la familia olfativa Oriental Vainilla para Hombres y Mujeres. Esta fragrancia es nueva.",
+    "accords": [
+      {
+        "name": "avainillado",
+        "intensity": 100
+      },
+      {
+        "name": "dulce",
+        "intensity": 82
+      },
+      {
+        "name": "atalcado",
+        "intensity": 62
+      },
+      {
+        "name": "almizclado",
+        "intensity": 58
+      },
+      {
+        "name": "ámbar",
+        "intensity": 48
+      }
+    ],
+    "notes": {
+      "top": [
+        "Caramelo de leche",
+        "crema batida"
+      ],
+      "heart": [
+        "caña de azúcar",
+        "heliotropo"
+      ],
+      "base": [
+        "vainilla",
+        "ambroxan",
+        "almizcle"
+      ],
+      "flat": []
+    },
+    "fragranticaUrl": "https://www.fragrantica.es/perfume/Lattafa-Perfumes/Nebras-Elixir-113906.html",
+    "image": "/img/lattafa-nebras-elixir.jpg"
+  },
+  {
+    "id": "rasasi-hawas-black",
+    "brand": "Rasasi",
+    "name": "Hawas Black",
+    "ml": 100,
+    "price": 54000,
+    "searchQuery": "Rasasi Hawas Black",
+    "enriched": true,
+    "gender": "masculino",
+    "family": "Aromática Frutal",
+    "year": 2024,
+    "perfumer": null,
+    "description": "Hawas Black de Rasasi es una fragancia de la familia olfativa Aromática Frutal para Hombres. Esta fragrancia es nueva.",
+    "accords": [
+      {
+        "name": "amaderado",
+        "intensity": 100
+      },
+      {
+        "name": "cítrico",
+        "intensity": 82
+      },
+      {
+        "name": "musgoso",
+        "intensity": 70
+      },
+      {
+        "name": "terrosos",
+        "intensity": 66
+      },
+      {
+        "name": "fresco especiado",
+        "intensity": 52
+      },
+      {
+        "name": "afrutados",
+        "intensity": 50
+      },
+      {
+        "name": "pachulí",
+        "intensity": 50
+      },
+      {
+        "name": "dulce",
+        "intensity": 48
+      },
+      {
+        "name": "aromático",
+        "intensity": 45
+      }
+    ],
+    "notes": {
+      "top": [
+        "bergamota",
+        "piña",
+        "toronja (pomelo)"
+      ],
+      "heart": [
+        "pachulí",
+        "cedro",
+        "jazmín"
+      ],
+      "base": [
+        "musgo de roble",
+        "notas amaderadas",
+        "ámbar"
+      ],
+      "flat": []
+    },
+    "fragranticaUrl": "https://www.fragrantica.es/perfume/Rasasi/Hawas-Black-96817.html",
+    "image": "/img/rasasi-hawas-black.jpg"
+  },
+  {
+    "id": "afnan-9pm-elixir",
+    "brand": "Afnan",
+    "name": "9PM Elixir Parfum Intense",
+    "ml": 100,
+    "price": 63500,
+    "searchQuery": "Afnan 9PM Elixir",
+    "enriched": true,
+    "gender": "unisex",
+    "family": "Oriental Especiada",
+    "year": 2025,
+    "perfumer": null,
+    "description": "9PM Elixir de Afnan es una fragancia de la familia olfativa Oriental Especiada para Hombres y Mujeres. Esta fragrancia es nueva.",
+    "accords": [
+      {
+        "name": "cálido especiado",
+        "intensity": 100
+      },
+      {
+        "name": "avainillado",
+        "intensity": 73
+      },
+      {
+        "name": "aromático",
+        "intensity": 68
+      },
+      {
+        "name": "fresco especiado",
+        "intensity": 65
+      },
+      {
+        "name": "cuero",
+        "intensity": 55
+      },
+      {
+        "name": "lavanda",
+        "intensity": 53
+      },
+      {
+        "name": "balsámico",
+        "intensity": 52
+      },
+      {
+        "name": "pachulí",
+        "intensity": 49
+      },
+      {
+        "name": "atalcado",
+        "intensity": 45
+      },
+      {
+        "name": "amaderado",
+        "intensity": 45
+      }
+    ],
+    "notes": {
+      "top": [
+        "cardamomo",
+        "nuez moscada",
+        "elemí"
+      ],
+      "heart": [
+        "pimienta de Jamaica",
+        "cuero",
+        "lavanda"
+      ],
+      "base": [
+        "vainilla",
+        "pachulí",
+        "ládano",
+        "heliántemo"
+      ],
+      "flat": []
+    },
+    "fragranticaUrl": "https://www.fragrantica.es/perfume/Afnan/9PM-Elixir-111894.html",
+    "image": "/img/afnan-9pm-elixir.jpg"
+  },
+  {
+    "id": "lattafa-eclaire-pistache",
+    "brand": "Lattafa",
+    "name": "Eclaire Pistache",
+    "ml": 100,
+    "price": 51000,
+    "searchQuery": "Lattafa Eclaire Pistache",
+    "enriched": true,
+    "gender": "unisex",
+    "family": "Oriental Vainilla",
+    "year": 2025,
+    "perfumer": null,
+    "description": "Eclaire Pistache de Lattafa Perfumes es una fragancia de la familia olfativa Oriental Vainilla para Hombres y Mujeres. Esta fragrancia es nueva.",
+    "accords": [
+      {
+        "name": "avainillado",
+        "intensity": 100
+      },
+      {
+        "name": "dulce",
+        "intensity": 84
+      },
+      {
+        "name": "lactónico",
+        "intensity": 77
+      },
+      {
+        "name": "cacao",
+        "intensity": 68
+      },
+      {
+        "name": "cálido especiado",
+        "intensity": 53
+      },
+      {
+        "name": "amaderado",
+        "intensity": 52
+      },
+      {
+        "name": "nueces",
+        "intensity": 52
+      },
+      {
+        "name": "coco",
+        "intensity": 50
+      },
+      {
+        "name": "atalcado",
+        "intensity": 49
+      }
+    ],
+    "notes": {
+      "top": [
+        "Crema de pistacho",
+        "pistacho (pistache)"
+      ],
+      "heart": [
+        "cacao",
+        "crema batida",
+        "coco"
+      ],
+      "base": [
+        "vainilla",
+        "leche",
+        "almizcle"
+      ],
+      "flat": []
+    },
+    "fragranticaUrl": "https://www.fragrantica.es/perfume/Lattafa-Perfumes/Eclaire-Pistache-113777.html",
+    "image": "/img/lattafa-eclaire-pistache.jpg"
+  },
+  {
+    "id": "armaf-yum-yum-delights",
+    "brand": "Armaf",
+    "name": "Yum Yum Delights",
+    "ml": 100,
+    "price": 60000,
+    "searchQuery": "Armaf Yum Yum Delights",
+    "enriched": true,
+    "gender": "femenino",
+    "family": "Floral Frutal",
+    "year": 2024,
+    "perfumer": null,
+    "description": "Yum Yum de Armaf es una fragancia de la familia olfativa Floral Frutal para Mujeres. Esta fragrancia es nueva.",
+    "accords": [
+      {
+        "name": "afrutados",
+        "intensity": 100
+      },
+      {
+        "name": "atalcado",
+        "intensity": 94
+      },
+      {
+        "name": "acerezado",
+        "intensity": 72
+      },
+      {
+        "name": "amaderado",
+        "intensity": 70
+      },
+      {
+        "name": "rosas",
+        "intensity": 65
+      },
+      {
+        "name": "dulce",
+        "intensity": 64
+      },
+      {
+        "name": "cítrico",
+        "intensity": 61
+      },
+      {
+        "name": "floral blanco",
+        "intensity": 60
+      },
+      {
+        "name": "avainillado",
+        "intensity": 59
+      },
+      {
+        "name": "almizclado",
+        "intensity": 55
+      }
+    ],
+    "notes": {
+      "top": [
+        "bayas silvestres",
+        "cereza",
+        "naranja",
+        "bergamota"
+      ],
+      "heart": [
+        "rosa",
+        "flores blancas",
+        "vainilla"
+      ],
+      "base": [
+        "notas atalcadas",
+        "almizcle",
+        "ámbar"
+      ],
+      "flat": []
+    },
+    "fragranticaUrl": "https://www.fragrantica.es/perfume/Armaf/Yum-Yum-98717.html",
+    "image": "/img/armaf-yum-yum-delights.jpg",
+    "mustMatch": [
+      "yum",
+      "delights"
+    ]
+  }
+]
