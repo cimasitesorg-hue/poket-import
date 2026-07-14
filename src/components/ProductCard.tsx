@@ -17,11 +17,15 @@ export function ProductCard({ product, onOpen, stagger }: Props) {
         type="button"
         onClick={() => onOpen(product)}
         className="pressable group block w-full overflow-hidden rounded-2xl bg-surface text-left"
-        aria-label={`Ver detalle de ${product.brand} ${product.name}`}
+        aria-label={`Ver detalle de ${product.brand} ${product.name}${product.inStock ? "" : ", sin stock"}`}
       >
         <motion.div layoutId={`art-${product.id}`} className="aspect-[4/5] w-full overflow-hidden">
-          {/* Zoom sutil solo en dispositivos con hover real (desktop) */}
-          <div className="h-full w-full transition-transform duration-700 ease-out-expo motion-safe:group-hover:scale-[1.06]">
+          {/* Zoom sutil solo en dispositivos con hover real (desktop); agotados en gris */}
+          <div
+            className={`h-full w-full transition-transform duration-700 ease-out-expo motion-safe:group-hover:scale-[1.06] ${
+              product.inStock ? "" : "opacity-55 grayscale"
+            }`}
+          >
             <BottleArt product={product} />
           </div>
         </motion.div>
@@ -32,8 +36,16 @@ export function ProductCard({ product, onOpen, stagger }: Props) {
           </div>
           <AccordChips accords={product.accords} />
           <div className="mt-1 flex items-baseline justify-between">
-            <span className="tnum text-lg font-medium text-copper">{formatARS(product.price)}</span>
-            <span className="text-xs text-ink-muted">{product.ml}ml</span>
+            <span className={`tnum text-lg font-medium ${product.inStock ? "text-copper" : "text-ink-muted"}`}>
+              {formatARS(product.price)}
+            </span>
+            {product.inStock ? (
+              <span className="text-xs text-ink-muted">{product.ml}ml</span>
+            ) : (
+              <span className="rounded-full border border-line px-2 py-0.5 text-xs text-ink-muted">
+                Sin stock
+              </span>
+            )}
           </div>
         </div>
       </button>

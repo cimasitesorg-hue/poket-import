@@ -57,13 +57,19 @@ export function Catalog({ products, loading, error, onOpen }: Props) {
 
   const filtered = useMemo(
     () =>
-      products.filter((p) => {
-        if (gender !== "todos" && p.gender !== gender) return false;
-        if (family !== "todas" && deriveFamily(p) !== family) return false;
-        return true;
-      }),
+      products
+        .filter((p) => {
+          if (gender !== "todos" && p.gender !== gender) return false;
+          if (family !== "todas" && deriveFamily(p) !== family) return false;
+          return true;
+        })
+        // Los agotados van al final, manteniendo el orden dentro de cada grupo
+        .sort((a, b) => Number(b.inStock) - Number(a.inStock)),
     [products, gender, family],
   );
+
+  const inStockCount = filtered.filter((p) => p.inStock).length;
+  const outCount = filtered.length - inStockCount;
 
   const hasFilters = gender !== "todos" || family !== "todas";
   const revealRef = useReveal<HTMLUListElement>([filtered, loading]);
@@ -73,7 +79,8 @@ export function Catalog({ products, loading, error, onOpen }: Props) {
       <div className="flex flex-col gap-2">
         <h2 className="text-3xl md:text-4xl">El catálogo</h2>
         <p className="max-w-[48ch] text-ink-muted">
-          Todo lo que ves está en stock. Tocá un perfume para ver sus notas y acordes.
+          Tocá un perfume para ver sus notas y acordes. Los agotados vuelven seguido: pedinos que te
+          avisemos.
         </p>
       </div>
 
@@ -148,8 +155,9 @@ export function Catalog({ products, loading, error, onOpen }: Props) {
       ) : (
         <>
           <p className="tnum mt-8 text-sm text-ink-muted" aria-live="polite">
-            {filtered.length} {filtered.length === 1 ? "perfume" : "perfumes"}
-            {hasFilters ? " con estos filtros" : " en stock"}
+            {inStockCount} {inStockCount === 1 ? "perfume" : "perfumes"} en stock
+            {hasFilters ? " con estos filtros" : ""}
+            {outCount > 0 ? `, ${outCount} sin stock` : ""}
           </p>
           <ul ref={revealRef} className="mt-4 grid grid-cols-2 gap-3 md:grid-cols-3 md:gap-5">
             {filtered.map((p, i) => (

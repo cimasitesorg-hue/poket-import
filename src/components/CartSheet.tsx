@@ -1,5 +1,5 @@
 import { useMemo, useState } from "react";
-import { AnimatePresence, motion, useReducedMotion } from "motion/react";
+import { motion, useReducedMotion } from "motion/react";
 import { Minus, Plus, Trash, WhatsappLogo, CaretLeft } from "@phosphor-icons/react";
 import type { Product } from "../types";
 import { formatARS } from "../lib/format";
@@ -20,16 +20,20 @@ export function CartSheet({ open, onClose, products }: Props) {
   const [confirming, setConfirming] = useState(false);
   const reduce = useReducedMotion();
 
-  const lines = useMemo<OrderLine[]>(
-    () =>
-      items
-        .map((item) => {
-          const product = products.find((p) => p.id === item.id);
-          return product ? { product, qty: item.qty } : null;
-        })
-        .filter(Boolean) as OrderLine[],
-    [items, products],
-  );
+  // Los productos que quedaron sin stock (ej: guardados en localStorage de una
+  // visita anterior) no entran en el pedido; se avisan aparte.
+  const { lines, unavailable } = useMemo(() => {
+    const all = items
+      .map((item) => {
+        const product = products.find((p) => p.id === item.id);
+        return product ? { product, qty: item.qty } : null;
+      })
+      .filter(Boolean) as OrderLine[];
+    return {
+      lines: all.filter((l) => l.product.inStock),
+      unavailable: all.filter((l) => !l.product.inStock),
+    };
+  }, [items, products]);
 
   const total = lines.reduce((sum, l) => sum + l.product.price * l.qty, 0);
 
@@ -39,18 +43,34 @@ export function CartSheet({ open, onClose, products }: Props) {
   };
 
   // Transición direccional entre pasos: confirmar entra desde la derecha,
-  // volver al carrito entra desde la izquierda (comunica adelante/atrás).
+  // volver al carrito desde la izquierda. Solo animación de ENTRADA sobre un
+  // remount con key: los exit de AnimatePresence (motion 12.42.2) nunca
+  // completan y dejaban el sheet vacío a mitad del flujo.
   const stepMotion = (dir: 1 | -1) =>
     reduce
-      ? { initial: { opacity: 0 }, animate: { opacity: 1 }, exit: { opacity: 0 } }
+      ? { initial: { opacity: 0 }, animate: { opacity: 1 } }
       : {
           initial: { opacity: 0, x: 36 * dir },
           animate: { opacity: 1, x: 0 },
-          exit: { opacity: 0, x: -24 * dir },
         };
 
   return (
     <Sheet open={open} onClose={close} label={confirming ? "Confirmar pedido" : "Tu carrito"}>
+      {unavailable.length > 0 && !confirming && (
+        <div className="mt-1 mb-3 flex items-center justify-between gap-3 rounded-2xl bg-surface-2 p-4">
+          <p className="text-sm leading-relaxed text-ink-muted">
+            Sin stock, no entra en el pedido:{" "}
+            <span className="text-ink">{unavailable.map((l) => l.product.name).join(", ")}</span>
+          </p>
+          <button
+            type="button"
+            onClick={() => unavailable.forEach((l) => remove(l.product.id))}
+            className="pressable min-h-11 shrink-0 rounded-full border border-line px-4 text-sm text-ink-muted hover:text-ink"
+          >
+            Sacar
+          </button>
+        </div>
+      )}
       {lines.length === 0 ? (
         <div className="flex flex-col items-center gap-3 py-12 text-center">
           <span
@@ -65,7 +85,7 @@ export function CartSheet({ open, onClose, products }: Props) {
           </p>
         </div>
       ) : (
-        <AnimatePresence mode="wait" initial={false}>
+        <>
           {confirming ? (
             /* ===== Paso de confirmación antes de mandar ===== */
             <motion.div
@@ -119,14 +139,14 @@ export function CartSheet({ open, onClose, products }: Props) {
               className="flex flex-col gap-4 pt-1 pb-2"
             >
               <ul className="flex flex-col gap-3">
-                <AnimatePresence initial={false} mode="popLayout">
-                  {lines.map(({ product, qty }) => (
+                {/* layout={!reduce}: FLIP reflow al quitar un ítem; la fila sale
+                    instantánea (sin exit: AnimatePresence no desmonta en 12.42.2) */}
+                {lines.map(({ product, qty }) => (
                     <motion.li
                       key={product.id}
                       layout={!reduce}
                       initial={reduce ? { opacity: 0 } : { opacity: 0, y: 16 }}
                       animate={reduce ? { opacity: 1 } : { opacity: 1, y: 0 }}
-                      exit={reduce ? { opacity: 0 } : { opacity: 0, scale: 0.96 }}
                       transition={{ duration: 0.32, ease: EASE }}
                       className="flex items-center gap-3 rounded-2xl bg-surface-2 p-3"
                     >
@@ -173,7 +193,6 @@ export function CartSheet({ open, onClose, products }: Props) {
                       </div>
                     </motion.li>
                   ))}
-                </AnimatePresence>
               </ul>
 
               <div className="sticky bottom-0 -mx-5 flex items-center justify-between gap-4 border-t border-line bg-surface px-5 pt-4 pb-1">
@@ -203,7 +222,7 @@ export function CartSheet({ open, onClose, products }: Props) {
               </div>
             </motion.div>
           )}
-        </AnimatePresence>
+        </>
       )}
     </Sheet>
   );

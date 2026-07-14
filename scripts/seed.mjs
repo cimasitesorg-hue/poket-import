@@ -42,6 +42,7 @@ const stock = [
 
 const products = stock.map(([id, brand, name, searchQuery, ml, price]) => ({
   id, brand, name, ml, price, searchQuery,
+  inStock: true,
   enriched: false,
   gender: null,
   family: null,

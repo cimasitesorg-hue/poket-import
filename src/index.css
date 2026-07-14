@@ -152,6 +152,33 @@ h3 {
   }
 }
 
+/* ===== Sheet: entrada/salida en CSS puro (montaje manual en Sheet.tsx) ===== */
+.sheet-root {
+  opacity: 1;
+  transition: opacity 300ms var(--ease-out-expo);
+  @starting-style {
+    opacity: 0;
+  }
+}
+.sheet-root[data-state="closed"] {
+  opacity: 0;
+  pointer-events: none;
+  transition-duration: 250ms;
+}
+@media (prefers-reduced-motion: no-preference) {
+  .sheet-panel {
+    transform: translateY(0);
+    transition: transform 620ms var(--ease-drawer);
+    @starting-style {
+      transform: translateY(100%);
+    }
+  }
+  .sheet-root[data-state="closed"] .sheet-panel {
+    transform: translateY(100%);
+    transition-duration: 350ms;
+  }
+}
+
 /* ===== Contenido de la ficha: entra en jerarquía (tras el shared element) ===== */
 @media (prefers-reduced-motion: no-preference) {
   .sheet-in {

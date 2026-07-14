@@ -11,7 +11,8 @@
     "enrich": "tsx scripts/enrich.ts",
     "seed": "node scripts/seed.mjs",
     "images": "node scripts/images.mjs",
-    "serve:pages": "node scripts/serve-subpath.mjs"
+    "serve:pages": "node scripts/serve-subpath.mjs",
+    "stock": "node scripts/stock.mjs"
   },
   "dependencies": {
     "@fontsource-variable/bodoni-moda": "^5.2.7",

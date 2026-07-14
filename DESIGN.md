@@ -44,3 +44,7 @@ Acordes olfativos (`src/lib/accords.ts`): grilla perceptual fija, L ∈ [0.66, 0
 ## Accesibilidad de los sheets
 
 `Sheet.tsx` es el único primitivo de modal: foco al panel al abrir, Tab contenido (trap), Escape y swipe-down para cerrar, foco devuelto al trigger al cerrar, `aria-modal` + `aria-label`. No crear otros modales por fuera.
+
+## Regla dura: NADA de exits de AnimatePresence
+
+`AnimatePresence` de motion 12.42.2 no desmonta a los hijos cuando termina el exit: los sheets quedaban pegados en pantalla y `mode="wait"` dejaba el paso de confirmación en blanco. Por eso en todo el proyecto las salidas son: (a) el Sheet monta/desmonta a mano con transiciones CSS (`.sheet-root`/`.sheet-panel` + `@starting-style`), y (b) el resto usa remounts con `key` que animan solo la ENTRADA (la salida es instantánea). Antes de reintroducir `AnimatePresence`, verificar el cierre real en el browser.

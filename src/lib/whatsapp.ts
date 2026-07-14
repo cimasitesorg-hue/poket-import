@@ -28,3 +28,9 @@ export function buildOrderText(lines: OrderLine[]): string {
 export function buildWaLink(lines: OrderLine[]): string {
   return `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(buildOrderText(lines))}`;
 }
+
+/** Para productos sin stock: pedir aviso de reingreso. */
+export function buildNotifyLink(product: Product): string {
+  const text = `¡Hola Poket Import! ¿Me avisás cuando vuelva ${product.brand} ${product.name} (${product.ml}ml)?`;
+  return `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(text)}`;
+}

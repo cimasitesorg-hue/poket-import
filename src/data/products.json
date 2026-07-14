@@ -74,7 +74,8 @@
       "flat": []
     },
     "fragranticaUrl": "https://www.fragrantica.es/perfume/French-Avenue/Liquid-Brun-94713.html",
-    "image": "/img/french-avenue-liquid-brun.jpg"
+    "image": "/img/french-avenue-liquid-brun.jpg",
+    "inStock": true
   },
   {
     "id": "lattafa-the-kingdom-masc",
@@ -150,7 +151,8 @@
       "flat": []
     },
     "fragranticaUrl": "https://www.fragrantica.es/perfume/Lattafa-Perfumes/The-Kingdom-For-Men-97995.html",
-    "image": "/img/lattafa-the-kingdom-masc.jpg"
+    "image": "/img/lattafa-the-kingdom-masc.jpg",
+    "inStock": true
   },
   {
     "id": "afnan-9pm-black",
@@ -239,7 +241,8 @@
       "9am",
       "dive",
       "pour"
-    ]
+    ],
+    "inStock": false
   },
   {
     "id": "lattafa-khamrah",
@@ -311,7 +314,8 @@
       "flat": []
     },
     "fragranticaUrl": "https://www.fragrantica.es/perfume/Lattafa-Perfumes/Khamrah-75805.html",
-    "image": "/img/lattafa-khamrah.jpg"
+    "image": "/img/lattafa-khamrah.jpg",
+    "inStock": false
   },
   {
     "id": "lattafa-mayar-cherry-intense",
@@ -377,7 +381,8 @@
       "flat": []
     },
     "fragranticaUrl": "https://www.fragrantica.es/perfume/Lattafa-Perfumes/Mayar-Cherry-Intense-99872.html",
-    "image": "/img/lattafa-mayar-cherry-intense.jpg"
+    "image": "/img/lattafa-mayar-cherry-intense.jpg",
+    "inStock": true
   },
   {
     "id": "armaf-odyssey-candee",
@@ -455,7 +460,8 @@
       "flat": []
     },
     "fragranticaUrl": "https://www.fragrantica.es/perfume/Armaf/Odyssey-Candee-96990.html",
-    "image": "/img/armaf-odyssey-candee.jpg"
+    "image": "/img/armaf-odyssey-candee.jpg",
+    "inStock": true
   },
   {
     "id": "lattafa-yara-candy",
@@ -530,7 +536,8 @@
       "flat": []
     },
     "fragranticaUrl": "https://www.fragrantica.es/perfume/Lattafa-Perfumes/Yara-Candy-95752.html",
-    "image": "/img/lattafa-yara-candy.jpg"
+    "image": "/img/lattafa-yara-candy.jpg",
+    "inStock": true
   },
   {
     "id": "lattafa-the-kingdom-fem",
@@ -607,7 +614,8 @@
       "flat": []
     },
     "fragranticaUrl": "https://www.fragrantica.es/perfume/Lattafa-Perfumes/The-Kingdom-For-Women-98648.html",
-    "image": "/img/lattafa-the-kingdom-fem.jpg"
+    "image": "/img/lattafa-the-kingdom-fem.jpg",
+    "inStock": true
   },
   {
     "id": "lattafa-fakhar-rose-gold",
@@ -677,7 +685,8 @@
       "flat": []
     },
     "fragranticaUrl": "https://www.fragrantica.es/perfume/Lattafa-Perfumes/Fakhar-Rose-70466.html",
-    "image": "/img/lattafa-fakhar-rose-gold.jpg"
+    "image": "/img/lattafa-fakhar-rose-gold.jpg",
+    "inStock": false
   },
   {
     "id": "maison-alhambra-yeah-man",
@@ -759,7 +768,8 @@
     "mustMatch": [
       "yeah",
       "man"
-    ]
+    ],
+    "inStock": false
   },
   {
     "id": "lattafa-khamrah-waha",
@@ -839,7 +849,8 @@
       "flat": []
     },
     "fragranticaUrl": "https://www.fragrantica.es/perfume/Lattafa-Perfumes/Khamrah-Waha-132409.html",
-    "image": "/img/lattafa-khamrah-waha.jpg"
+    "image": "/img/lattafa-khamrah-waha.jpg",
+    "inStock": true
   },
   {
     "id": "lattafa-badee-al-oud-sublime",
@@ -902,7 +913,8 @@
       "flat": []
     },
     "fragranticaUrl": "https://www.fragrantica.es/perfume/Lattafa-Perfumes/Bade-e-Al-Oud-Sublime-83309.html",
-    "image": "/img/lattafa-badee-al-oud-sublime.jpg"
+    "image": "/img/lattafa-badee-al-oud-sublime.jpg",
+    "inStock": true
   },
   {
     "id": "rasasi-hawas-viper",
@@ -982,7 +994,8 @@
       "flat": []
     },
     "fragranticaUrl": "https://www.fragrantica.es/perfume/Rasasi/Hawas-Viper-113594.html",
-    "image": "/img/rasasi-hawas-viper.jpg"
+    "image": "/img/rasasi-hawas-viper.jpg",
+    "inStock": false
   },
   {
     "id": "rasasi-hawas-atlantis",
@@ -1061,7 +1074,8 @@
       "flat": []
     },
     "fragranticaUrl": "https://www.fragrantica.es/perfume/Rasasi/Hawas-Atlantis-112309.html",
-    "image": "/img/rasasi-hawas-atlantis.jpg"
+    "image": "/img/rasasi-hawas-atlantis.jpg",
+    "inStock": false
   },
   {
     "id": "rasasi-hawas-tropical",
@@ -1137,7 +1151,8 @@
       "flat": []
     },
     "fragranticaUrl": "https://www.fragrantica.es/perfume/Rasasi/Hawas-Tropical-108054.html",
-    "image": "/img/rasasi-hawas-tropical.jpg"
+    "image": "/img/rasasi-hawas-tropical.jpg",
+    "inStock": false
   },
   {
     "id": "lattafa-khamrah-qahwa",
@@ -1203,7 +1218,8 @@
       "flat": []
     },
     "fragranticaUrl": "https://www.fragrantica.es/perfume/Lattafa-Perfumes/Khamrah-Qahwa-88175.html",
-    "image": "/img/lattafa-khamrah-qahwa.jpg"
+    "image": "/img/lattafa-khamrah-qahwa.jpg",
+    "inStock": false
   },
   {
     "id": "armaf-odyssey-mandarin-sky",
@@ -1278,7 +1294,8 @@
       "elixir",
       "body mist",
       "vintage"
-    ]
+    ],
+    "inStock": true
   },
   {
     "id": "lattafa-asad-bourbon",
@@ -1354,7 +1371,8 @@
       "flat": []
     },
     "fragranticaUrl": "https://www.fragrantica.es/perfume/Lattafa-Perfumes/Asad-Bourbon-101124.html",
-    "image": "/img/lattafa-asad-bourbon.jpg"
+    "image": "/img/lattafa-asad-bourbon.jpg",
+    "inStock": true
   },
   {
     "id": "zimaya-tiramisu-caramel",
@@ -1426,7 +1444,8 @@
       "flat": []
     },
     "fragranticaUrl": "https://www.fragrantica.es/perfume/Zimaya/Tiramisu-Caramel-98691.html",
-    "image": "/img/zimaya-tiramisu-caramel.jpg"
+    "image": "/img/zimaya-tiramisu-caramel.jpg",
+    "inStock": true
   },
   {
     "id": "al-haramain-amber-oud-gold",
@@ -1502,7 +1521,8 @@
       "flat": []
     },
     "fragranticaUrl": "https://www.fragrantica.es/perfume/Al-Haramain-Perfumes/Amber-Oud-Gold-Edition-51816.html",
-    "image": "/img/al-haramain-amber-oud-gold.jpg"
+    "image": "/img/al-haramain-amber-oud-gold.jpg",
+    "inStock": true
   },
   {
     "id": "french-avenue-vulcan-feu",
@@ -1581,7 +1601,8 @@
       "flat": []
     },
     "fragranticaUrl": "https://www.fragrantica.es/perfume/French-Avenue/Vulcan-Feu-105520.html",
-    "image": "/img/french-avenue-vulcan-feu.jpg"
+    "image": "/img/french-avenue-vulcan-feu.jpg",
+    "inStock": true
   },
   {
     "id": "french-avenue-veneno-negro",
@@ -1655,7 +1676,8 @@
       "flat": []
     },
     "fragranticaUrl": "https://www.fragrantica.es/perfume/French-Avenue/Veneno-105519.html",
-    "image": "/img/french-avenue-veneno-negro.jpg"
+    "image": "/img/french-avenue-veneno-negro.jpg",
+    "inStock": false
   },
   {
     "id": "afnan-9pm-night-out",
@@ -1736,7 +1758,8 @@
       "flat": []
     },
     "fragranticaUrl": "https://www.fragrantica.es/perfume/Afnan/9-PM-Night-Out-123313.html",
-    "image": "/img/afnan-9pm-night-out.jpg"
+    "image": "/img/afnan-9pm-night-out.jpg",
+    "inStock": true
   },
   {
     "id": "lattafa-eclaire",
@@ -1795,7 +1818,8 @@
       "flat": []
     },
     "fragranticaUrl": "https://www.fragrantica.es/perfume/Lattafa-Perfumes/Eclaire-93628.html",
-    "image": "/img/lattafa-eclaire.jpg"
+    "image": "/img/lattafa-eclaire.jpg",
+    "inStock": true
   },
   {
     "id": "lattafa-musamam-black-intense",
@@ -1875,7 +1899,8 @@
       "flat": []
     },
     "fragranticaUrl": "https://www.fragrantica.es/perfume/Lattafa-Perfumes/Musamam-Black-Intense-119987.html",
-    "image": "/img/lattafa-musamam-black-intense.jpg"
+    "image": "/img/lattafa-musamam-black-intense.jpg",
+    "inStock": false
   },
   {
     "id": "armaf-odyssey-aqua",
@@ -1950,7 +1975,8 @@
       "flat": []
     },
     "fragranticaUrl": "https://www.fragrantica.es/perfume/Armaf/Odyssey-Aqua-Edition-83134.html",
-    "image": "/img/armaf-odyssey-aqua.jpg"
+    "image": "/img/armaf-odyssey-aqua.jpg",
+    "inStock": true
   },
   {
     "id": "lattafa-yara-elixir",
@@ -2025,7 +2051,8 @@
       "flat": []
     },
     "fragranticaUrl": "https://www.fragrantica.es/perfume/Lattafa-Perfumes/Yara-Elixir-117615.html",
-    "image": "/img/lattafa-yara-elixir.jpg"
+    "image": "/img/lattafa-yara-elixir.jpg",
+    "inStock": false
   },
   {
     "id": "rasasi-hawas-for-him",
@@ -2104,7 +2131,8 @@
       "flat": []
     },
     "fragranticaUrl": "https://www.fragrantica.es/perfume/Rasasi/Hawas-for-Him-46890.html",
-    "image": "/img/rasasi-hawas-for-him.jpg"
+    "image": "/img/rasasi-hawas-for-him.jpg",
+    "inStock": true
   },
   {
     "id": "lattafa-yara-rosado",
@@ -2171,7 +2199,8 @@
       "flat": []
     },
     "fragranticaUrl": "https://www.fragrantica.es/perfume/Lattafa-Perfumes/Yara-76880.html",
-    "image": "/img/lattafa-yara-rosado.jpg"
+    "image": "/img/lattafa-yara-rosado.jpg",
+    "inStock": true
   },
   {
     "id": "lattafa-nebras-elixir",
@@ -2225,7 +2254,8 @@
       "flat": []
     },
     "fragranticaUrl": "https://www.fragrantica.es/perfume/Lattafa-Perfumes/Nebras-Elixir-113906.html",
-    "image": "/img/lattafa-nebras-elixir.jpg"
+    "image": "/img/lattafa-nebras-elixir.jpg",
+    "inStock": false
   },
   {
     "id": "rasasi-hawas-black",
@@ -2297,7 +2327,8 @@
       "flat": []
     },
     "fragranticaUrl": "https://www.fragrantica.es/perfume/Rasasi/Hawas-Black-96817.html",
-    "image": "/img/rasasi-hawas-black.jpg"
+    "image": "/img/rasasi-hawas-black.jpg",
+    "inStock": true
   },
   {
     "id": "afnan-9pm-elixir",
@@ -2374,7 +2405,8 @@
       "flat": []
     },
     "fragranticaUrl": "https://www.fragrantica.es/perfume/Afnan/9PM-Elixir-111894.html",
-    "image": "/img/afnan-9pm-elixir.jpg"
+    "image": "/img/afnan-9pm-elixir.jpg",
+    "inStock": true
   },
   {
     "id": "lattafa-eclaire-pistache",
@@ -2445,7 +2477,8 @@
       "flat": []
     },
     "fragranticaUrl": "https://www.fragrantica.es/perfume/Lattafa-Perfumes/Eclaire-Pistache-113777.html",
-    "image": "/img/lattafa-eclaire-pistache.jpg"
+    "image": "/img/lattafa-eclaire-pistache.jpg",
+    "inStock": false
   },
   {
     "id": "armaf-yum-yum-delights",
@@ -2526,6 +2559,7 @@
     "mustMatch": [
       "yum",
       "delights"
-    ]
+    ],
+    "inStock": false
   }
 ]

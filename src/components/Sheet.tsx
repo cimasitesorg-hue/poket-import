@@ -1,10 +1,12 @@
-import { useEffect, useRef, type ReactNode } from "react";
+import { useEffect, useRef, useState, type ReactNode } from "react";
 import { createPortal } from "react-dom";
-import { AnimatePresence, motion, useReducedMotion } from "motion/react";
+import { motion } from "motion/react";
 import { X } from "@phosphor-icons/react";
-import { EASE_DRAWER } from "../lib/motion";
 
 const FOCUSABLE = 'a[href], button:not([disabled]), input, select, textarea, [tabindex]:not([tabindex="-1"])';
+
+/** Duración máxima de la salida (ver .sheet-root en index.css) + margen. */
+const EXIT_MS = 400;
 
 interface SheetProps {
   open: boolean;
@@ -16,12 +18,29 @@ interface SheetProps {
 /**
  * Bottom sheet base: overlay con blur, panel que sube con la curva de drawer
  * iOS, swipe-down para cerrar con dismiss por velocidad, Escape, tap en el
- * overlay, foco contenido (Tab cicla adentro) y devuelto al trigger al
- * cerrar. Con reduced-motion degrada a crossfade.
+ * overlay, foco contenido (Tab cicla adentro) y devuelto al trigger al cerrar.
+ *
+ * El montaje/desmontaje es MANUAL (estado mounted + timeout) y la entrada y
+ * salida son transiciones CSS puras (.sheet-root/.sheet-panel en index.css,
+ * con @starting-style). Motion queda solo para el drag: AnimatePresence de
+ * motion 12.42.2 no desmonta hijos al completar el exit y dejaba el sheet
+ * (y su overlay) pegado para siempre. No volver a AnimatePresence acá sin
+ * verificar el cierre en el browser.
  */
 export function Sheet({ open, onClose, label, children }: SheetProps) {
-  const reduce = useReducedMotion();
+  const [mounted, setMounted] = useState(open);
   const panelRef = useRef<HTMLDivElement>(null);
+
+  // Desmontaje diferido: al cerrar, la transición CSS corre y recién después
+  // sacamos el nodo del DOM.
+  useEffect(() => {
+    if (open) {
+      setMounted(true);
+      return;
+    }
+    const t = window.setTimeout(() => setMounted(false), EXIT_MS);
+    return () => window.clearTimeout(t);
+  }, [open]);
 
   // Bloqueo de scroll del body mientras el sheet está abierto
   useEffect(() => {
@@ -69,56 +88,56 @@ export function Sheet({ open, onClose, label, children }: SheetProps) {
     };
   }, [open, onClose]);
 
+  if (!mounted) return null;
+
   return createPortal(
-    <AnimatePresence>
-      {open && (
-        <div className="fixed inset-0 z-40" role="dialog" aria-modal="true" aria-label={label}>
-          <motion.button
-            type="button"
-            aria-label="Cerrar"
-            tabIndex={-1}
-            onClick={onClose}
-            className="absolute inset-0 h-full w-full cursor-default bg-black/60 backdrop-blur-sm"
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            exit={{ opacity: 0 }}
-            transition={{ duration: 0.35 }}
-          />
-          <motion.div
-            ref={panelRef}
-            tabIndex={-1}
-            className="absolute inset-x-0 bottom-0 mx-auto flex max-h-[88dvh] w-full max-w-lg flex-col overflow-hidden rounded-t-3xl bg-surface outline-none"
-            initial={reduce ? { opacity: 0 } : { y: "100%" }}
-            animate={reduce ? { opacity: 1 } : { y: 0 }}
-            exit={reduce ? { opacity: 0 } : { y: "100%" }}
-            transition={reduce ? { duration: 0.25 } : { duration: 0.62, ease: EASE_DRAWER }}
-            drag={reduce ? false : "y"}
-            dragConstraints={{ top: 0, bottom: 0 }}
-            dragElastic={{ top: 0, bottom: 0.6 }}
-            onDragEnd={(_, info) => {
-              // Flick rápido o arrastre largo: cerrar
-              if (info.velocity.y > 400 || info.offset.y > 140) onClose();
-            }}
-          >
-            <div className="flex items-center justify-between px-5 pt-3 pb-1">
-              <span aria-hidden="true" className="pointer-events-none absolute left-1/2 top-2 h-1 w-10 -translate-x-1/2 rounded-full bg-line" />
-              <span className="text-sm text-ink-muted">{label}</span>
-              <button
-                type="button"
-                onClick={onClose}
-                aria-label="Cerrar"
-                className="pressable -mr-2 flex h-11 w-11 items-center justify-center rounded-full text-ink-muted hover:text-ink"
-              >
-                <X size={20} weight="bold" />
-              </button>
-            </div>
-            <div className="overflow-y-auto overscroll-contain px-5 pb-[max(1.25rem,env(safe-area-inset-bottom))]">
-              {children}
-            </div>
-          </motion.div>
-        </div>
-      )}
-    </AnimatePresence>,
+    <div
+      className="sheet-root fixed inset-0 z-40"
+      data-state={open ? "open" : "closed"}
+      role="dialog"
+      aria-modal="true"
+      aria-label={label}
+    >
+      <button
+        type="button"
+        aria-label="Cerrar"
+        tabIndex={-1}
+        onClick={onClose}
+        className="absolute inset-0 h-full w-full cursor-default bg-black/60 backdrop-blur-sm"
+      />
+      {/* Wrapper: el slide de entrada/salida es CSS; el transform inline del
+          drag de Motion vive en el hijo y no pisa la transición. */}
+      <div className="sheet-panel absolute inset-x-0 bottom-0 mx-auto w-full max-w-lg">
+        <motion.div
+          ref={panelRef}
+          tabIndex={-1}
+          className="relative flex max-h-[88dvh] flex-col overflow-hidden rounded-t-3xl bg-surface outline-none"
+          drag="y"
+          dragConstraints={{ top: 0, bottom: 0 }}
+          dragElastic={{ top: 0, bottom: 0.6 }}
+          onDragEnd={(_, info) => {
+            // Flick rápido o arrastre largo: cerrar
+            if (info.velocity.y > 400 || info.offset.y > 140) onClose();
+          }}
+        >
+          <div className="flex items-center justify-between px-5 pt-3 pb-1">
+            <span aria-hidden="true" className="pointer-events-none absolute left-1/2 top-2 h-1 w-10 -translate-x-1/2 rounded-full bg-line" />
+            <span className="text-sm text-ink-muted">{label}</span>
+            <button
+              type="button"
+              onClick={onClose}
+              aria-label="Cerrar"
+              className="pressable -mr-2 flex h-11 w-11 items-center justify-center rounded-full text-ink-muted hover:text-ink"
+            >
+              <X size={20} weight="bold" />
+            </button>
+          </div>
+          <div className="overflow-y-auto overscroll-contain px-5 pb-[max(1.25rem,env(safe-area-inset-bottom))]">
+            {children}
+          </div>
+        </motion.div>
+      </div>
+    </div>,
     document.body,
   );
 }

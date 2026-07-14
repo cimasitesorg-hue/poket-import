@@ -1,9 +1,10 @@
 import { useState } from "react";
-import { AnimatePresence, motion, useReducedMotion } from "motion/react";
-import { Check, Plus } from "@phosphor-icons/react";
+import { motion, useReducedMotion } from "motion/react";
+import { Check, Plus, WhatsappLogo } from "@phosphor-icons/react";
 import type { Product } from "../types";
 import { formatARS } from "../lib/format";
 import { deriveFamily } from "../lib/accords";
+import { buildNotifyLink } from "../lib/whatsapp";
 import { useCart } from "../lib/cart";
 import { Sheet } from "./Sheet";
 import { AccordBars } from "./AccordChips";
@@ -59,6 +60,11 @@ export function ProductSheet({ product, onClose }: { product: Product | null; on
               </p>
               <h2 className="font-display text-2xl leading-tight">{product.name}</h2>
               <div className="mt-1 flex flex-wrap gap-1.5 text-xs text-ink-muted">
+                {!product.inStock && (
+                  <span className="rounded-full bg-surface-2 px-2.5 py-0.5 font-medium text-ink">
+                    Sin stock
+                  </span>
+                )}
                 {product.gender && (
                   <span className="rounded-full border border-line px-2.5 py-0.5">
                     {GENDER_LABEL[product.gender]}
@@ -118,9 +124,22 @@ export function ProductSheet({ product, onClose }: { product: Product | null; on
 
           <div className="sticky bottom-0 -mx-5 mt-2 flex items-center justify-between gap-4 border-t border-line bg-surface px-5 pt-4 pb-1">
             <div className="flex flex-col">
-              <span className="tnum font-display text-2xl text-copper">{formatARS(product.price)}</span>
-              <span className="text-xs text-ink-muted">{product.ml}ml</span>
+              <span className={`tnum font-display text-2xl ${product.inStock ? "text-copper" : "text-ink-muted"}`}>
+                {formatARS(product.price)}
+              </span>
+              <span className="text-xs text-ink-muted">{product.inStock ? `${product.ml}ml` : "Sin stock"}</span>
             </div>
+            {!product.inStock ? (
+              <a
+                href={buildNotifyLink(product)}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="pressable inline-flex min-h-12 items-center gap-2 rounded-full bg-copper px-6 py-3 font-medium text-bg hover:bg-copper-deep"
+              >
+                <WhatsappLogo size={18} weight="fill" />
+                <span className="whitespace-nowrap">Avisame cuando vuelva</span>
+              </a>
+            ) : (
             <button
               type="button"
               onClick={handleAdd}
@@ -128,30 +147,29 @@ export function ProductSheet({ product, onClose }: { product: Product | null; on
                 added ? "bg-surface-2 text-copper" : "bg-copper text-bg hover:bg-copper-deep"
               }`}
             >
-              {/* Blur crossfade: enmascara el swap de texto/ícono entre estados */}
-              <AnimatePresence mode="wait" initial={false}>
-                <motion.span
-                  key={added ? "ok" : "agregar"}
-                  initial={reduce ? { opacity: 0 } : { opacity: 0, filter: "blur(6px)" }}
-                  animate={{ opacity: 1, filter: "blur(0px)" }}
-                  exit={reduce ? { opacity: 0 } : { opacity: 0, filter: "blur(6px)" }}
-                  transition={{ duration: 0.26 }}
-                  className="inline-flex items-center gap-2 whitespace-nowrap"
-                >
-                  {added ? (
-                    <>
-                      <Check size={18} weight="bold" />
-                      Agregado
-                    </>
-                  ) : (
-                    <>
-                      <Plus size={18} weight="bold" />
-                      Agregar al carrito
-                    </>
-                  )}
-                </motion.span>
-              </AnimatePresence>
+              {/* Blur de entrada en cada remount (key): enmascara el swap de
+                  texto/ícono. Sin AnimatePresence: sus exit no desmontan. */}
+              <motion.span
+                key={added ? "ok" : "agregar"}
+                initial={reduce ? { opacity: 0 } : { opacity: 0, filter: "blur(6px)" }}
+                animate={{ opacity: 1, filter: "blur(0px)" }}
+                transition={{ duration: 0.26 }}
+                className="inline-flex items-center gap-2 whitespace-nowrap"
+              >
+                {added ? (
+                  <>
+                    <Check size={18} weight="bold" />
+                    Agregado
+                  </>
+                ) : (
+                  <>
+                    <Plus size={18} weight="bold" />
+                    Agregar al carrito
+                  </>
+                )}
+              </motion.span>
             </button>
+            )}
           </div>
         </div>
       )}

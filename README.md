@@ -32,6 +32,22 @@ Detalles importantes:
 - Si un perfume no se encuentra o el match no es confiable, queda con `"enriched": false` y el sitio muestra "ficha en preparación". Nunca inventa datos.
 - Para forzar el re-scrape de un producto, ponele `"enriched": false` (y `"fragranticaUrl": null` si querés que vuelva a buscar).
 
+## Cómo actualizar el stock
+
+Guardá la lista de difusión (el mensaje de WhatsApp/IG con emojis, tal cual) en un `.txt` y corré:
+
+```bash
+npm run stock -- ruta/a/lista.txt
+```
+
+El script matchea cada línea `Nombre — $precio` contra los productos:
+
+- Los que figuran quedan `inStock: true` y con el **precio actualizado** al de la lista.
+- Los que NO figuran pasan a `inStock: false`: siguen visibles en la página como "Sin stock" (foto en gris, al final del catálogo, botón "Avisame cuando vuelva" por WhatsApp) y no se pueden agregar al carrito.
+- Las líneas que no matchean ningún producto se reportan como **posibles ingresos nuevos**: agregalos a mano (sección siguiente) y volvé a correr `enrich` + `images`.
+
+Después: commit + push, y GitHub Pages redeploya solo.
+
 ## Cómo agregar un producto nuevo
 
 1. Abrí `src/data/products.json` y agregá una entrada al final con esta forma mínima:

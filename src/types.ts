@@ -9,6 +9,7 @@ export interface Product {
   name: string;
   ml: number;
   price: number; // ARS
+  inStock: boolean;
   searchQuery: string;
   enriched: boolean;
   gender: "masculino" | "femenino" | "unisex" | null;
