@@ -68,10 +68,7 @@ export function Catalog({ products, loading, error, onOpen }: Props) {
     [products, gender, family],
   );
 
-  const inStockCount = filtered.filter((p) => p.inStock).length;
-  const outCount = filtered.length - inStockCount;
 
-  const hasFilters = gender !== "todos" || family !== "todas";
   const revealRef = useReveal<HTMLUListElement>([filtered, loading]);
 
   return (
@@ -154,10 +151,8 @@ export function Catalog({ products, loading, error, onOpen }: Props) {
         </div>
       ) : (
         <>
-          <p className="tnum mt-8 text-sm text-ink-muted" aria-live="polite">
-            {inStockCount} {inStockCount === 1 ? "perfume" : "perfumes"} en stock
-            {hasFilters ? " con estos filtros" : ""}
-            {outCount > 0 ? `, ${outCount} sin stock` : ""}
+          <p className="mt-8 text-sm text-ink-muted">
+            Mirá nuestras fragancias más <em className="text-copper italic">exclusivas</em>.
           </p>
           <ul ref={revealRef} className="mt-4 grid grid-cols-2 gap-3 md:grid-cols-3 md:gap-5">
             {filtered.map((p, i) => (
